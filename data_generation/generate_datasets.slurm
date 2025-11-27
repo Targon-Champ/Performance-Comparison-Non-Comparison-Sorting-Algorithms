@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#SBATCH --job-name=gen_signed_datasets
-#SBATCH --output=logs/gen_signed_datasets_%j.out
-#SBATCH --error=logs/gen_signed_datasets_%j.err
-#SBATCH --time=04:00:00
+#SBATCH --job-name=gen_all_datasets
+#SBATCH --output=logs/gen_all_datasets_%j.out
+#SBATCH --error=logs/gen_all_datasets_%j.err
+#SBATCH --time=06:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
@@ -26,44 +26,59 @@ python -c "import sys; print('Python version:', sys.version)"
 
 # === Parameters ===
 
-# Distributions supported by generate_datasets.py
 DISTS=(uniform gaussian exponential sorted reverse)
-
-# Dataset sizes
 SIZES=(100 1000 10000 100000 1000000 10000000 100000000)
 
-# Research-standard signed 64-bit range:
-#   [-2147483648, 2147483647]
-MIN_VALUE=-2147483648
-MAX_VALUE=2147483647
+# Signed range: [-2^31, 2^31-1]
+SIGNED_MIN=-2147483648
+SIGNED_MAX=2147483647
 
-OUT_DIR="datasets_signed"
+# Unsigned range: [0, 2^32-1]
+UNSIGNED_MAX=4294967295
 
-echo "Starting signed dataset generation at: $(date)"
-echo "Signed range: ${MIN_VALUE} to ${MAX_VALUE}"
+SIGNED_OUT_DIR="datasets_signed"
+UNSIGNED_OUT_DIR="datasets_unsigned"
 
-# === Generation Loop ===
+echo "Starting dataset generation at: $(date)"
+echo "Signed range:   ${SIGNED_MIN} to ${SIGNED_MAX}"
+echo "Unsigned range: 0 to ${UNSIGNED_MAX}"
+
+# === Signed datasets (int64) ===
 
 for dist in "${DISTS[@]}"; do
   for n in "${SIZES[@]}"; do
-
     echo "------------------------------------------------------------"
-    echo "Generating:"
-    echo "  dist      = ${dist}"
-    echo "  n         = ${n}"
-    echo "  min_value = ${MIN_VALUE}"
-    echo "  max_value = ${MAX_VALUE}"
-    echo "  output    = ${OUT_DIR}"
+    echo "SIGNED: dist=${dist}, n=${n}, min=${SIGNED_MIN}, max=${SIGNED_MAX}"
+    echo "Output dir: ${SIGNED_OUT_DIR}"
     echo "------------------------------------------------------------"
 
     python data_generation/generate_datasets.py \
       --dist "${dist}" \
       --n "${n}" \
-      --min-value "${MIN_VALUE}" \
-      --max-value "${MAX_VALUE}" \
+      --min-value "${SIGNED_MIN}" \
+      --max-value "${SIGNED_MAX}" \
       --seed 42 \
-      --out-dir "${OUT_DIR}"
+      --out-dir "${SIGNED_OUT_DIR}"
   done
 done
 
-echo "Finished signed dataset generation at: $(date)"
+# === Unsigned datasets (uint64) ===
+
+for dist in "${DISTS[@]}"; do
+  for n in "${SIZES[@]}"; do
+    echo "------------------------------------------------------------"
+    echo "UNSIGNED: dist=${dist}, n=${n}, min=0, max=${UNSIGNED_MAX}"
+    echo "Output dir: ${UNSIGNED_OUT_DIR}"
+    echo "------------------------------------------------------------"
+
+    python data_generation/generate_datasets.py \
+      --dist "${dist}" \
+      --unsigned \
+      --n "${n}" \
+      --max-value "${UNSIGNED_MAX}" \
+      --seed 42 \
+      --out-dir "${UNSIGNED_OUT_DIR}"
+  done
+done
+
+echo "Finished dataset generation at: $(date)"

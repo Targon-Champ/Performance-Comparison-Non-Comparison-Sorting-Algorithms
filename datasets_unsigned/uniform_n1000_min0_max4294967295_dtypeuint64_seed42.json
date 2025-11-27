@@ -1,0 +1,15 @@
+{
+  "distribution": "uniform",
+  "n": 1000,
+  "min_value": 0,
+  "max_value": 4294967295,
+  "seed": 42,
+  "dtype": "uint64",
+  "stats": {
+    "n": 1000,
+    "min": 2235000,
+    "max": 4285262775,
+    "mean": 2144049549.794,
+    "variance": 1.5723983722707387e+18
+  }
+}

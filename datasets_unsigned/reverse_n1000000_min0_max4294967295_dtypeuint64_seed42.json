@@ -1,0 +1,15 @@
+{
+  "distribution": "reverse",
+  "n": 1000000,
+  "min_value": 0,
+  "max_value": 4294967295,
+  "seed": 42,
+  "dtype": "uint64",
+  "stats": {
+    "n": 1000000,
+    "min": 9563,
+    "max": 4294964337,
+    "mean": 2148248357.402041,
+    "variance": 1.5364986409994383e+18
+  }
+}

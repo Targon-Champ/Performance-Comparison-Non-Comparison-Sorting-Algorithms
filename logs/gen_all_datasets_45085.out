@@ -1,0 +1,497 @@
+Python: /mnt/vstor/courses/csds438/sxi219/conda_envs/sorting/bin/python
+Conda env: /mnt/vstor/courses/csds438/sxi219/conda_envs/sorting
+Python version: 3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]
+Starting dataset generation at: Thu Nov 27 02:26:40 EST 2025
+Signed range:   -2147483648 to 2147483647
+Unsigned range: 0 to 4294967295
+------------------------------------------------------------
+SIGNED: dist=uniform, n=100, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/uniform_n100_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/uniform_n100_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/uniform_n100_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=uniform, n=1000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/uniform_n1000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/uniform_n1000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/uniform_n1000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=uniform, n=10000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/uniform_n10000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/uniform_n10000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/uniform_n10000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=uniform, n=100000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/uniform_n100000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/uniform_n100000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/uniform_n100000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=uniform, n=1000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/uniform_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/uniform_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/uniform_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=uniform, n=10000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/uniform_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/uniform_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/uniform_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=uniform, n=100000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/uniform_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/uniform_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/uniform_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=gaussian, n=100, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/gaussian_n100_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_signed/gaussian_n100_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_signed/gaussian_n100_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+SIGNED: dist=gaussian, n=1000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/gaussian_n1000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_signed/gaussian_n1000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_signed/gaussian_n1000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+SIGNED: dist=gaussian, n=10000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/gaussian_n10000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_signed/gaussian_n10000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_signed/gaussian_n10000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+SIGNED: dist=gaussian, n=100000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/gaussian_n100000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_signed/gaussian_n100000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_signed/gaussian_n100000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+SIGNED: dist=gaussian, n=1000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/gaussian_n1000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_signed/gaussian_n1000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_signed/gaussian_n1000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+SIGNED: dist=gaussian, n=10000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/gaussian_n10000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_signed/gaussian_n10000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_signed/gaussian_n10000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+SIGNED: dist=gaussian, n=100000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/gaussian_n100000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_signed/gaussian_n100000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_signed/gaussian_n100000000_min-2147483648_max2147483647_dtypeint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+SIGNED: dist=exponential, n=100, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/exponential_n100_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.npy
+Saved BIN:   datasets_signed/exponential_n100_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.bin
+Saved JSON:  datasets_signed/exponential_n100_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.json
+------------------------------------------------------------
+SIGNED: dist=exponential, n=1000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/exponential_n1000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.npy
+Saved BIN:   datasets_signed/exponential_n1000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.bin
+Saved JSON:  datasets_signed/exponential_n1000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.json
+------------------------------------------------------------
+SIGNED: dist=exponential, n=10000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/exponential_n10000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.npy
+Saved BIN:   datasets_signed/exponential_n10000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.bin
+Saved JSON:  datasets_signed/exponential_n10000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.json
+------------------------------------------------------------
+SIGNED: dist=exponential, n=100000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/exponential_n100000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.npy
+Saved BIN:   datasets_signed/exponential_n100000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.bin
+Saved JSON:  datasets_signed/exponential_n100000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.json
+------------------------------------------------------------
+SIGNED: dist=exponential, n=1000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/exponential_n1000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.npy
+Saved BIN:   datasets_signed/exponential_n1000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.bin
+Saved JSON:  datasets_signed/exponential_n1000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.json
+------------------------------------------------------------
+SIGNED: dist=exponential, n=10000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/exponential_n10000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.npy
+Saved BIN:   datasets_signed/exponential_n10000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.bin
+Saved JSON:  datasets_signed/exponential_n10000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.json
+------------------------------------------------------------
+SIGNED: dist=exponential, n=100000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/exponential_n100000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.npy
+Saved BIN:   datasets_signed/exponential_n100000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.bin
+Saved JSON:  datasets_signed/exponential_n100000000_min-2147483648_max2147483647_dtypeint64_seed42_lam1.0.json
+------------------------------------------------------------
+SIGNED: dist=sorted, n=100, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/sorted_n100_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/sorted_n100_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/sorted_n100_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=sorted, n=1000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/sorted_n1000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/sorted_n1000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/sorted_n1000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=sorted, n=10000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/sorted_n10000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/sorted_n10000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/sorted_n10000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=sorted, n=100000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/sorted_n100000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/sorted_n100000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/sorted_n100000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=sorted, n=1000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/sorted_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/sorted_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/sorted_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=sorted, n=10000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/sorted_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/sorted_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/sorted_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=sorted, n=100000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/sorted_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/sorted_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/sorted_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=reverse, n=100, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/reverse_n100_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/reverse_n100_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/reverse_n100_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=reverse, n=1000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/reverse_n1000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/reverse_n1000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/reverse_n1000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=reverse, n=10000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/reverse_n10000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/reverse_n10000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/reverse_n10000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=reverse, n=100000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/reverse_n100000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/reverse_n100000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/reverse_n100000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=reverse, n=1000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/reverse_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/reverse_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/reverse_n1000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=reverse, n=10000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/reverse_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/reverse_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/reverse_n10000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+SIGNED: dist=reverse, n=100000000, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------
+Saved NPY:   datasets_signed/reverse_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.npy
+Saved BIN:   datasets_signed/reverse_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.bin
+Saved JSON:  datasets_signed/reverse_n100000000_min-2147483648_max2147483647_dtypeint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=uniform, n=100, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/uniform_n100_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/uniform_n100_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/uniform_n100_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=uniform, n=1000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/uniform_n1000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/uniform_n1000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/uniform_n1000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=uniform, n=10000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=uniform, n=100000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=uniform, n=1000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=uniform, n=10000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=uniform, n=100000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=gaussian, n=100, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/gaussian_n100_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_unsigned/gaussian_n100_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_unsigned/gaussian_n100_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+UNSIGNED: dist=gaussian, n=1000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/gaussian_n1000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_unsigned/gaussian_n1000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_unsigned/gaussian_n1000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+UNSIGNED: dist=gaussian, n=10000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+UNSIGNED: dist=gaussian, n=100000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+UNSIGNED: dist=gaussian, n=1000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+UNSIGNED: dist=gaussian, n=10000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+UNSIGNED: dist=gaussian, n=100000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.npy
+Saved BIN:   datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+Saved JSON:  datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.json
+------------------------------------------------------------
+UNSIGNED: dist=exponential, n=100, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.npy
+Saved BIN:   datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+Saved JSON:  datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.json
+------------------------------------------------------------
+UNSIGNED: dist=exponential, n=1000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.npy
+Saved BIN:   datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+Saved JSON:  datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.json
+------------------------------------------------------------
+UNSIGNED: dist=exponential, n=10000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.npy
+Saved BIN:   datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+Saved JSON:  datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.json
+------------------------------------------------------------
+UNSIGNED: dist=exponential, n=100000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.npy
+Saved BIN:   datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+Saved JSON:  datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.json
+------------------------------------------------------------
+UNSIGNED: dist=exponential, n=1000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.npy
+Saved BIN:   datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+Saved JSON:  datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.json
+------------------------------------------------------------
+UNSIGNED: dist=exponential, n=10000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.npy
+Saved BIN:   datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+Saved JSON:  datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.json
+------------------------------------------------------------
+UNSIGNED: dist=exponential, n=100000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.npy
+Saved BIN:   datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+Saved JSON:  datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.json
+------------------------------------------------------------
+UNSIGNED: dist=sorted, n=100, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/sorted_n100_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/sorted_n100_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/sorted_n100_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=sorted, n=1000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/sorted_n1000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/sorted_n1000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/sorted_n1000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=sorted, n=10000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=sorted, n=100000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=sorted, n=1000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=sorted, n=10000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=sorted, n=100000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=reverse, n=100, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/reverse_n100_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/reverse_n100_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/reverse_n100_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=reverse, n=1000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/reverse_n1000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/reverse_n1000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/reverse_n1000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=reverse, n=10000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=reverse, n=100000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=reverse, n=1000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=reverse, n=10000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.json
+------------------------------------------------------------
+UNSIGNED: dist=reverse, n=100000000, min=0, max=4294967295
+Output dir: datasets_unsigned
+------------------------------------------------------------
+Saved NPY:   datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.npy
+Saved BIN:   datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+Saved JSON:  datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.json
+Finished dataset generation at: Thu Nov 27 02:28:09 EST 2025
