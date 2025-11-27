@@ -1,0 +1,18 @@
+{
+  "distribution": "exponential",
+  "n": 1000,
+  "min_value": -2147483648,
+  "max_value": 2147483647,
+  "seed": 42,
+  "dtype": "int64",
+  "stats": {
+    "n": 1000,
+    "min": -2144634990,
+    "max": 2147483647,
+    "mean": -1551505701.081,
+    "variance": 3.49855632989967e+17
+  },
+  "params": {
+    "lam": 1.0
+  }
+}

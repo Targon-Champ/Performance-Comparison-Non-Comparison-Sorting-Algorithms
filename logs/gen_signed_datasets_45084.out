@@ -1,0 +1,461 @@
+Python: /mnt/vstor/courses/csds438/sxi219/conda_envs/sorting/bin/python
+Conda env: /mnt/vstor/courses/csds438/sxi219/conda_envs/sorting
+Python version: 3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]
+Starting signed dataset generation at: Thu Nov 27 02:09:05 EST 2025
+Signed range: -2147483648 to 2147483647
+------------------------------------------------------------
+Generating:
+  dist      = uniform
+  n         = 100
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/uniform_n100_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/uniform_n100_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/uniform_n100_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = uniform
+  n         = 1000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/uniform_n1000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/uniform_n1000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/uniform_n1000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = uniform
+  n         = 10000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/uniform_n10000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/uniform_n10000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/uniform_n10000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = uniform
+  n         = 100000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/uniform_n100000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/uniform_n100000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/uniform_n100000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = uniform
+  n         = 1000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/uniform_n1000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/uniform_n1000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/uniform_n1000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = uniform
+  n         = 10000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/uniform_n10000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/uniform_n10000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/uniform_n10000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = uniform
+  n         = 100000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/uniform_n100000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/uniform_n100000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/uniform_n100000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = gaussian
+  n         = 100
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/gaussian_n100_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.npy
+Saved BIN   : datasets_signed/gaussian_n100_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.bin
+Saved META  : datasets_signed/gaussian_n100_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = gaussian
+  n         = 1000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/gaussian_n1000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.npy
+Saved BIN   : datasets_signed/gaussian_n1000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.bin
+Saved META  : datasets_signed/gaussian_n1000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = gaussian
+  n         = 10000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/gaussian_n10000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.npy
+Saved BIN   : datasets_signed/gaussian_n10000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.bin
+Saved META  : datasets_signed/gaussian_n10000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = gaussian
+  n         = 100000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/gaussian_n100000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.npy
+Saved BIN   : datasets_signed/gaussian_n100000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.bin
+Saved META  : datasets_signed/gaussian_n100000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = gaussian
+  n         = 1000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/gaussian_n1000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.npy
+Saved BIN   : datasets_signed/gaussian_n1000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.bin
+Saved META  : datasets_signed/gaussian_n1000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = gaussian
+  n         = 10000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/gaussian_n10000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.npy
+Saved BIN   : datasets_signed/gaussian_n10000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.bin
+Saved META  : datasets_signed/gaussian_n10000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = gaussian
+  n         = 100000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/gaussian_n100000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.npy
+Saved BIN   : datasets_signed/gaussian_n100000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.bin
+Saved META  : datasets_signed/gaussian_n100000000_min-2147483648_max2147483647_seed42_mu0.0_sigma100.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = exponential
+  n         = 100
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/exponential_n100_min-2147483648_max2147483647_seed42_lam1.0.npy
+Saved BIN   : datasets_signed/exponential_n100_min-2147483648_max2147483647_seed42_lam1.0.bin
+Saved META  : datasets_signed/exponential_n100_min-2147483648_max2147483647_seed42_lam1.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = exponential
+  n         = 1000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/exponential_n1000_min-2147483648_max2147483647_seed42_lam1.0.npy
+Saved BIN   : datasets_signed/exponential_n1000_min-2147483648_max2147483647_seed42_lam1.0.bin
+Saved META  : datasets_signed/exponential_n1000_min-2147483648_max2147483647_seed42_lam1.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = exponential
+  n         = 10000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/exponential_n10000_min-2147483648_max2147483647_seed42_lam1.0.npy
+Saved BIN   : datasets_signed/exponential_n10000_min-2147483648_max2147483647_seed42_lam1.0.bin
+Saved META  : datasets_signed/exponential_n10000_min-2147483648_max2147483647_seed42_lam1.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = exponential
+  n         = 100000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/exponential_n100000_min-2147483648_max2147483647_seed42_lam1.0.npy
+Saved BIN   : datasets_signed/exponential_n100000_min-2147483648_max2147483647_seed42_lam1.0.bin
+Saved META  : datasets_signed/exponential_n100000_min-2147483648_max2147483647_seed42_lam1.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = exponential
+  n         = 1000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/exponential_n1000000_min-2147483648_max2147483647_seed42_lam1.0.npy
+Saved BIN   : datasets_signed/exponential_n1000000_min-2147483648_max2147483647_seed42_lam1.0.bin
+Saved META  : datasets_signed/exponential_n1000000_min-2147483648_max2147483647_seed42_lam1.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = exponential
+  n         = 10000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/exponential_n10000000_min-2147483648_max2147483647_seed42_lam1.0.npy
+Saved BIN   : datasets_signed/exponential_n10000000_min-2147483648_max2147483647_seed42_lam1.0.bin
+Saved META  : datasets_signed/exponential_n10000000_min-2147483648_max2147483647_seed42_lam1.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = exponential
+  n         = 100000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/exponential_n100000000_min-2147483648_max2147483647_seed42_lam1.0.npy
+Saved BIN   : datasets_signed/exponential_n100000000_min-2147483648_max2147483647_seed42_lam1.0.bin
+Saved META  : datasets_signed/exponential_n100000000_min-2147483648_max2147483647_seed42_lam1.0.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = sorted
+  n         = 100
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/sorted_n100_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/sorted_n100_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/sorted_n100_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = sorted
+  n         = 1000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/sorted_n1000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/sorted_n1000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/sorted_n1000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = sorted
+  n         = 10000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/sorted_n10000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/sorted_n10000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/sorted_n10000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = sorted
+  n         = 100000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/sorted_n100000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/sorted_n100000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/sorted_n100000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = sorted
+  n         = 1000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/sorted_n1000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/sorted_n1000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/sorted_n1000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = sorted
+  n         = 10000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/sorted_n10000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/sorted_n10000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/sorted_n10000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = sorted
+  n         = 100000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/sorted_n100000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/sorted_n100000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/sorted_n100000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = reverse
+  n         = 100
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/reverse_n100_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/reverse_n100_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/reverse_n100_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = reverse
+  n         = 1000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/reverse_n1000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/reverse_n1000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/reverse_n1000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = reverse
+  n         = 10000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/reverse_n10000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/reverse_n10000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/reverse_n10000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = reverse
+  n         = 100000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/reverse_n100000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/reverse_n100000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/reverse_n100000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = reverse
+  n         = 1000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/reverse_n1000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/reverse_n1000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/reverse_n1000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = reverse
+  n         = 10000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/reverse_n10000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/reverse_n10000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/reverse_n10000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+------------------------------------------------------------
+Generating:
+  dist      = reverse
+  n         = 100000000
+  min_value = -2147483648
+  max_value = 2147483647
+  output    = datasets_signed
+------------------------------------------------------------
+--------------------------------------------------
+Saved NPY   : datasets_signed/reverse_n100000000_min-2147483648_max2147483647_seed42.npy
+Saved BIN   : datasets_signed/reverse_n100000000_min-2147483648_max2147483647_seed42.bin
+Saved META  : datasets_signed/reverse_n100000000_min-2147483648_max2147483647_seed42.json
+--------------------------------------------------
+Finished signed dataset generation at: Thu Nov 27 02:09:55 EST 2025

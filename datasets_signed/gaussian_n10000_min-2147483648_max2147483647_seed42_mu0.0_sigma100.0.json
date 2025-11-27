@@ -1,0 +1,19 @@
+{
+  "distribution": "gaussian",
+  "n": 10000,
+  "min_value": -2147483648,
+  "max_value": 2147483647,
+  "seed": 42,
+  "dtype": "int64",
+  "stats": {
+    "n": 10000,
+    "min": -392,
+    "max": 392,
+    "mean": -0.2101,
+    "variance": 9988.538357989999
+  },
+  "params": {
+    "mu": 0.0,
+    "sigma": 100.0
+  }
+}

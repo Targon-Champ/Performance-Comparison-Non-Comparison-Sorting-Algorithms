@@ -1,0 +1,11 @@
+name: sorting
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - matplotlib
+  - numpy
+  - pandas
+  - scipy
+  - seaborn
+prefix: /mnt/vstor/courses/csds438/sxi219/conda_envs/sorting
