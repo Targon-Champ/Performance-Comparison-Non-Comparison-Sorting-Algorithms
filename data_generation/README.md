@@ -419,13 +419,4 @@ Performance-Comparison-Non-Comparison-Sorting-Algorithms/
 └── PHASE_1_DATA_GENERATION.md
 ```
 
----
 
-
-
-
-* A **PDF version**
-* A **LaTeX appendix**
-* A **diagram-based architecture section**
-
-Just tell me.
