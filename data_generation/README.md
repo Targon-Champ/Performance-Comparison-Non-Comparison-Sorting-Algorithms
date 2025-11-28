@@ -1,36 +1,47 @@
+```
+PHASE_1_DATA_GENERATION.md
+```
 
 ---
 
-# Phase 1 — Dataset Generation
+# **Phase 1 — Dataset Generation (Final Report)**
 
 Performance Comparison of Non-Comparison Sorting Algorithms on CPU and GPU
 
 ---
 
-## 1. Overview
+# **1. Overview**
 
-Phase 1 establishes a complete, reproducible, research-grade dataset generation pipeline for benchmarking five non-comparison sorting algorithms across CPU, multicore, and GPU architectures.
+Phase 1 establishes a **complete, reproducible, HPC-ready dataset generation pipeline** to support CPU (sequential + multicore) and GPU benchmarking of five non-comparison sorting algorithms:
 
-The goals of this phase are:
+* **Radix Sort**
+* **Counting Sort**
+* **Bucket Sort**
+* **Pigeonhole Sort**
+* **Bitonic Sort**
 
-* Generate datasets across a wide range of sizes
-* Include multiple statistical distributions
-* Use signed 64-bit integer domains
-* Output formats compatible with Python, C++, and CUDA
-* Preserve full metadata and reproducibility
-* Provide HPC-scale generation via SLURM
+The primary goal of Phase 1 is to create **high-quality datasets** that:
 
-This document formally concludes Phase 1.
+* Exercise all algorithmic edge-cases
+* Support both **unsigned (uint64)** and **signed (int64)** integer domains
+* Produce **research-grade distribution profiles**
+* Include **algorithm-specific range-limited datasets**
+* Are reproducible via **metadata + SLURM execution**
+* Provide both `.bin` and `.npy` formats for C++/CUDA/Python
+
+This document represents the **final Phase 1 specification and completion summary.**
 
 ---
 
-# 2. Dataset Requirements
+# **2. Dataset Requirements**
 
-The dataset generator must satisfy the following:
+The generator produces datasets that meet the following requirements:
 
-### 2.1 Dataset Sizes
+---
 
-The following sizes are generated:
+## **2.1 Data Sizes**
+
+Each distribution is generated at these sizes:
 
 ```
 100
@@ -42,173 +53,232 @@ The following sizes are generated:
 100,000,000
 ```
 
-These sizes exercise different performance regimes and memory behaviors of CPU/GPU algorithms.
-
-### 2.2 Statistical Distributions
-
-Five distributions are included:
-
-1. Uniform
-2. Gaussian (Normal)
-3. Exponential
-4. Sorted (ascending)
-5. Reverse sorted (descending)
-
-These cover:
-
-* Random workloads
-* Realistic noise patterns
-* Skewed workloads
-* Best-case and worst-case inputs
-
-### 2.3 Signed 64-bit Integer Support
-
-All values are generated in the signed 32-bit representable range:
-
-```
-[-2,147,483,648 , +2,147,483,647]
-```
-
 Reasons:
 
-* Real-world workloads frequently include negative values
-* Validates Radix Sort implementation for signed domains
-* Enhances generalizability
-* Ensures experiments are publication-grade
+| Size Range | Purpose                                            |
+| ---------- | -------------------------------------------------- |
+| 10²–10⁴    | micro-scale behavior, OMP overhead, kernel warmups |
+| 10⁵–10⁶    | cache effects, histogram scalability               |
+| 10⁷        | L3 cache pressure, memory-bandwidth dominated      |
+| 10⁸        | near-GPU scale, swaps become expensive             |
 
-Internally, all values are stored as `int64` (`numpy.int64`), ensuring cross-language compatibility.
-
----
-
-# 3. Distributions in Detail
-
-### 3.1 Uniform Distribution
-
-Samples integers uniformly in `[min_value, max_value]`.
-
-Applications:
-
-* Baseline performance
-* Balanced random workloads
-
-### 3.2 Gaussian Distribution
-
-Samples from `N(mean, std)` and clips into the valid range.
-
-Applications:
-
-* Physics simulations
-* Sensor noise
-* Real-world measurement data
-
-### 3.3 Exponential Distribution
-
-Samples from an exponential distribution on `[0, ∞)` then normalizes and maps to the full signed range.
-
-Applications:
-
-* Rare-event heavy workloads
-* Queueing and time-interval models
-* Skewed data stress-testing
-
-### 3.4 Sorted Distribution
-
-Uniformly generated values followed by ascending sort.
-
-Used for:
-
-* Best-case scenarios
-* Adaptive sorting algorithms
-
-### 3.5 Reverse Sorted Distribution
-
-Uniform values followed by descending sort.
-
-Used for:
-
-* Worst-case scenarios
-* Cache line behavior testing
-* Branch misprediction studies
+These sizes ensure coverage of **all performance regimes**.
 
 ---
 
-# 4. Generator Implementation
+## **2.2 Supported Distributions**
 
-The dataset generator is implemented in:
+Phase 1 includes **seven** distributions:
+
+### **Core statistical distributions**
+
+1. **Uniform**
+2. **Gaussian (Normal)**
+3. **Exponential**
+
+### **Structural distributions**
+
+4. **Sorted**
+5. **Reverse**
+
+### **Algorithm edge-case distributions**
+
+6. **All Keys Equal**
+   *Critical for evaluating histogram-based algorithms (counting/pigeonhole/radix).*
+
+7. **Staggered**
+   Alternating pattern (e.g., `0, max, 1, max-1, ...`), producing worst-case memory access patterns.
+
+These seven distributions enable comprehensive stress-testing across:
+
+* entropy levels
+* skewness
+* locality
+* monotonicity
+* histogram complexity
+* branch misprediction patterns
+* distribution-specific failure modes of non-comparison algorithms
+
+---
+
+## **2.3 Signed + Unsigned Domain Support**
+
+Phase 1 now includes **both** domains:
+
+| Domain              | Range                      | Purpose                                              |
+| ------------------- | -------------------------- | ---------------------------------------------------- |
+| **unsigned uint64** | `[0, 2³²−1]` or controlled | Baseline, original non-comparison context            |
+| **signed int64**    | `[-2³¹, 2³¹−1]`            | Full signed workloads for Radix-based signed sorting |
+
+### **Signed domain justification**
+
+Signed datasets support:
+
+* Real-world data (financial, sensor readings, time deltas)
+* Research validity for Radix signed mapping
+* Signed algorithm correctness verification
+* GPU based signed comparisons
+
+All signed datasets store values as **NumPy `int64`**.
+
+---
+
+## **2.4 Algorithm-Limit Ranges**
+
+Phase 1 now includes **range-restricted datasets** designed specifically for:
+
+* Counting Sort
+* Pigeonhole Sort
+* Bucket Sort
+
+Range-limited datasets (e.g., range ≤ 100k) ensure:
+
+* algorithms do not OOM
+* parallel histograms remain feasible
+* comparison fairness across algorithms
+* research on “operational region limits” of each algorithm
+
+These datasets are generated with compact ranges such as:
+
+```
+[0, 999]
+[0, 99,999]
+[1,000,000 values with range 10,000]
+```
+
+---
+
+# **3. Dataset Generation Implementation**
+
+The generator script:
 
 ```
 data_generation/generate_datasets.py
 ```
 
-Key features:
+contains:
 
-* Signed 64-bit integers
-* Uniform, Gaussian, Exponential, Sorted, Reverse
-* Raw binary `.bin` output for C++/CUDA
-* Numpy `.npy` output for Python
-* Metadata `.json` for reproducibility
-* Deterministic via user-provided `--seed`
-* Configurable via CLI
+* Pure NumPy generation
+* Fixed-seed reproducibility
+* JSON metadata
+* Range-limit detection
+* Distribution-specific parameters
+* **Idempotent behavior**:
+
+  * Checks if output exists
+  * **Does NOT regenerate** datasets unnecessarily
+* Compatibility with older NumPy (`randint` patched)
+
+### **Important Fix: NumPy `integers` → `randint`**
+
+Older cluster NumPy lacked `np.random.integers`.
+Phase 1 uses:
+
+```python
+np.random.randint(low, high+1, size=n, dtype=dtype)
+```
+
+to maintain **inclusive upper bounds**.
 
 ---
 
-# 5. Command Line Interface
+# **4. Distribution Generation Details**
 
-Usage:
+### **4.1 Uniform**
 
-```
-python generate_datasets.py \
-    --dist <uniform|gaussian|exponential|sorted|reverse> \
-    --n <size> \
-    --min-value <int> \
-    --max-value <int> \
-    --seed <int> \
-    --out-dir <path>
-```
-
-Optional parameters:
-
-```
---mean <float>    (Gaussian)
---std <float>     (Gaussian)
---lam <float>     (Exponential)
-```
+Uses `randint(min, max+1)`.
+Baseline for distribution-agnostic behavior.
 
 ---
 
-# 6. Output File Formats
-
-Each dataset produces three files:
-
-### 6.1 Numpy File (.npy)
-
-* Stores data in Numpy format
-* Used by Python analysis tools
-* Preserves `int64` dtype exactly
-
-Example filename:
+### **4.2 Gaussian**
 
 ```
-uniform_n100000_min-2147483648_max2147483647_seed42.npy
+np.random.normal(mu, sigma)
+clip(min, max)
 ```
 
-### 6.2 Raw Binary File (.bin)
+Clipping prevents out-of-range values and produces realistic noise.
 
-* Raw contiguous 64-bit integers
-* Loadable with `fread`, `ifstream.read`, or CUDA device reads
-* No headers or metadata
+---
 
-C++ example:
+### **4.3 Exponential**
+
+Generated via:
+
+```
+np.random.exponential(lam)
+scaled → int64 range
+```
+
+Produces highly skewed workloads.
+
+---
+
+### **4.4 Sorted**
+
+Uniform distribution → `.sort()` ascending.
+
+Used for best-case inputs.
+
+---
+
+### **4.5 Reverse Sorted**
+
+Uniform distribution → `.sort()` descending.
+
+Used for worst-case CPU cache effects.
+
+---
+
+### **4.6 All Keys Equal**
+
+Every element = constant.
+
+Stress test for:
+
+* OMP contention
+* bucket collapse
+* histogram collapse
+* warp efficiency loss on GPU
+
+---
+
+### **4.7 Staggered**
+
+Pattern:
+
+```
+min, max, min+1, max-1, ...
+```
+
+Designed to cause:
+
+* worst-case locality
+* pointer chasing issues
+* branch misprediction amplification
+
+---
+
+# **5. Output File Formats**
+
+Each dataset produces:
+
+### **`.npy`**
+
+Used for Python evaluation.
+
+### **`.bin`**
+
+Raw binary values for C++ and CUDA:
 
 ```cpp
-std::ifstream f("file.bin", std::ios::binary);
-std::vector<int64_t> v(N);
-f.read((char*)v.data(), N * sizeof(int64_t));
+std::ifstream f("data.bin", std::ios::binary);
+v.resize(N);
+f.read((char*)v.data(), N * sizeof(T));
 ```
 
-### 6.3 Metadata File (.json)
-
-Contains distribution parameters, statistics, and reproducibility metadata.
+### **`.json`**
 
 Example:
 
@@ -216,137 +286,146 @@ Example:
 {
   "distribution": "uniform",
   "n": 1000000,
-  "min_value": -2147483648,
-  "max_value": 2147483647,
+  "min": -2147483648,
+  "max": 2147483647,
   "seed": 42,
   "dtype": "int64",
+  "params": {},
   "stats": {
-    "n": 1000000,
-    "min": -2147479183,
-    "max": 2147483645,
     "mean": -15102.3,
     "variance": 3.99e+18
   }
 }
 ```
 
+Includes full specification + stats.
+
 ---
 
-# 7. HPC SLURM Large-Scale Dataset Generation
+# **6. Idempotent Generation**
 
-Large-scale generation is performed using the SLURM script:
+Phase 1 now uses:
+
+* File checks before generating:
+
+  * If `.bin`, `.npy`, `.json` exist → **skip**
+* Ensures:
+
+  * No duplicate work
+  * No accidental overwrites
+  * Perfect reproducibility
+  * Safe for large datasets (100M elements)
+
+---
+
+# **7. SLURM HPC Generation**
+
+SLURM jobs generate the full matrix of datasets:
 
 ```
+generate_datasets.slurm
 generate_datasets_negative.slurm
 ```
 
-This script:
+Capabilities:
 
-* Loads Miniconda
-* Activates the controlled environment
-* Generates all dataset sizes
-* Iterates over all distribution types
-* Writes all `.npy`, `.bin`, `.json` files
-
-### SLURM Generation Summary
-
-* Distributions: 5
-* Sizes: 7
-* Total datasets: 35
-* Each dataset produces:
-
-  * `.npy`
-  * `.bin`
-  * `.json`
+* Generates all 7 distributions
+* Both signed and unsigned sets
+* All sizes up to 100M
+* Outputs all formats
+* Uses cluster memory safely
+* Can resume mid-generation due to idempotency
 
 Submit via:
 
 ```
-sbatch generate_datasets_negative.slurm
+sbatch generate_datasets.slurm
 ```
 
 ---
 
-# 8. Verification
+# **8. Verification Procedures**
 
-### 8.1 Validate Numpy File
+### **8.1 Validate `.npy`:**
 
 ```python
-import numpy as np
 arr = np.load("file.npy")
-print(arr.shape, arr.dtype)
+print(arr.dtype, arr.shape)
 ```
 
-### 8.2 Validate Binary File
+### **8.2 Validate `.bin`:**
 
 ```python
-bin_arr = np.fromfile("file.bin", dtype=np.int64)
+raw = np.fromfile("file.bin", dtype=np.int64)
 ```
 
-### 8.3 Ensure Exact Match
+### **8.3 Cross-check:**
 
 ```python
-assert np.array_equal(arr, bin_arr)
+assert np.array_equal(raw, arr)
 ```
 
-### 8.4 Check Metadata
+### **8.4 Validate JSON metadata:**
 
 ```python
 import json
 meta = json.load(open("file.json"))
-print(meta)
 ```
 
 ---
 
-# 9. Reproducibility Guarantees
+# **9. Reproducibility Guarantees**
 
-This pipeline provides:
+Phase 1 now guarantees:
 
-* Fixed seed control
-* Full metadata recording
 * Deterministic dataset generation
-* Raw binary for C++/CUDA reproducibility
-* Numpy format for Python reproducibility
-* Conda-locked environment preventing version drift
-* SLURM scripts ensuring consistent HPC execution
+* Explicit seeding
+* Full configuration captured in metadata
+* Algorithm-limit range datasets
+* Signed + unsigned domain correctness
+* SLURM execution for consistency
+* Bin + NPY + JSON availability
+* No duplicated generation
+* Environment locked via Conda YAML
 
-This ensures long-term validity and publishable reliability.
+This makes Phase 1 **fully publication-ready**.
 
 ---
 
-# 10. Directory Structure
-
-A typical repository after Phase 1:
+# **10. Final Directory Structure**
 
 ```
 Performance-Comparison-Non-Comparison-Sorting-Algorithms/
 │
 ├── data_generation/
-│   └── generate_datasets.py
+│   ├── generate_datasets.py
+│   ├── generate_datasets.slurm
+│   └── config.json
 │
 ├── datasets_signed/
-│   ├── *.npy
-│   ├── *.bin
-│   └── *.json
+│   ├── gaussian_*.bin / .npy / .json
+│   ├── uniform_*.bin / .npy / .json
+│   ├── exponential_*.*
+│   ├── sorted_*.*
+│   ├── reverse_*.*
+│   ├── all_equal_*.*
+│   └── staggered_*.*
 │
-├── slurm/
-│   └── generate_datasets_negative.slurm
+├── datasets_unsigned/
+│   ├── same structure as signed domain
+│
+├── logs/
 │
 └── PHASE_1_DATA_GENERATION.md
 ```
 
 ---
 
-# Phase 1 Completed
-
-The dataset generation pipeline is now:
-
-* Fully implemented
-* HPC-ready
-* Reproducible
-* Compatible with Python, C++, and CUDA
-* Capable of generating large, diverse, signed 64-bit datasets
-* Complete with documentation, metadata, and SLURM automation
 
 
+
+* A **PDF version**
+* A **LaTeX appendix**
+* A **diagram-based architecture section**
+
+Just tell me.
