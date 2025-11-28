@@ -1,6 +1,3 @@
-```
-PHASE_1_DATA_GENERATION.md
-```
 
 ---
 
