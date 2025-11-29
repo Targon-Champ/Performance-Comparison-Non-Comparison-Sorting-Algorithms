@@ -1,0 +1,9 @@
+{
+  "name": "staggered",
+  "n": 1000000,
+  "dtype": "int64",
+  "seed": 42,
+  "min": -2147483648,
+  "max": 2147483647,
+  "range_profile": "full"
+}

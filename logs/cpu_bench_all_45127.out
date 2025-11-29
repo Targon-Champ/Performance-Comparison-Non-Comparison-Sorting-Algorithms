@@ -1,0 +1,1884 @@
+SLURM job running on host: classct015
+SLURM_SUBMIT_DIR=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms
+Configured parameters:
+  DATASET_DIR_UINT64 = datasets_unsigned
+  DATASET_DIR_INT64  = datasets_signed
+  DTYPE_LIST         = uint64 int64
+  IMPL_LIST          = seq omp
+  ALGO_LIST_UINT64   = radix counting bucket pigeonhole bitonic
+  ALGO_LIST_INT64    = radix
+  THREADS            = 8
+  CHECK              = 1
+  REPEATS            = 3
+  WARMUP             = 1
+  CSV_PATH_UINT64    = logs/cpu_bench_uint64.csv
+  CSV_PATH_INT64     = logs/cpu_bench_int64.csv
+
+======== CPU BENCHMARK FULL SWEEP START ========
+
+=== DTYPE=uint64 ===
+  DATASET_DIR = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned
+  ALGO_LIST   = radix counting bucket pigeonhole bitonic
+  CSV_PATH    = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv
+
+
+---- Dataset: all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N        = 100000000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=100000000 threads=8 ms=8663.593395 s_per_elem=0.000000 ns_per_elem=86.635934 mels_per_s=11.542555 bytes=800000000 GB=0.800000 GBps=0.092340 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=100000000 threads=8 ms=1604.646575 s_per_elem=0.000000 ns_per_elem=16.046466 mels_per_s=62.319019 bytes=800000000 GB=0.800000 GBps=0.498552 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=100000000 threads=8 ms=2638.151697 s_per_elem=0.000000 ns_per_elem=26.381517 mels_per_s=37.905326 bytes=800000000 GB=0.800000 GBps=0.303243 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=100000000 threads=8 ms=2186.854393 s_per_elem=0.000000 ns_per_elem=21.868544 mels_per_s=45.727782 bytes=800000000 GB=0.800000 GBps=0.365822 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=100000000 threads=8 ms=1276.978849 s_per_elem=0.000000 ns_per_elem=12.769788 mels_per_s=78.309833 bytes=800000000 GB=0.800000 GBps=0.626479 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=100000000 threads=8 ms=1274.001118 s_per_elem=0.000000 ns_per_elem=12.740011 mels_per_s=78.492867 bytes=800000000 GB=0.800000 GBps=0.627943 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=100000000 threads=8 ms=4838.811705 s_per_elem=0.000000 ns_per_elem=48.388117 mels_per_s=20.666231 bytes=800000000 GB=0.800000 GBps=0.165330 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=100000000 threads=8 ms=4486.122750 s_per_elem=0.000000 ns_per_elem=44.861228 mels_per_s=22.290964 bytes=800000000 GB=0.800000 GBps=0.178328 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=100000000 threads=8 ms=205255.511162 s_per_elem=0.000002 ns_per_elem=2052.555112 mels_per_s=0.487198 bytes=800000000 GB=0.800000 GBps=0.003898 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=100000000 threads=8 ms=34654.252983 s_per_elem=0.000000 ns_per_elem=346.542530 mels_per_s=2.885649 bytes=800000000 GB=0.800000 GBps=0.023085 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N        = 10000000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=10000000 threads=8 ms=866.394177 s_per_elem=0.000000 ns_per_elem=86.639418 mels_per_s=11.542091 bytes=80000000 GB=0.080000 GBps=0.092337 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=10000000 threads=8 ms=161.050838 s_per_elem=0.000000 ns_per_elem=16.105084 mels_per_s=62.092195 bytes=80000000 GB=0.080000 GBps=0.496738 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=10000000 threads=8 ms=262.421265 s_per_elem=0.000000 ns_per_elem=26.242127 mels_per_s=38.106668 bytes=80000000 GB=0.080000 GBps=0.304853 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=10000000 threads=8 ms=221.947458 s_per_elem=0.000000 ns_per_elem=22.194746 mels_per_s=45.055709 bytes=80000000 GB=0.080000 GBps=0.360446 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=10000000 threads=8 ms=126.958540 s_per_elem=0.000000 ns_per_elem=12.695854 mels_per_s=78.765871 bytes=80000000 GB=0.080000 GBps=0.630127 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=10000000 threads=8 ms=127.356063 s_per_elem=0.000000 ns_per_elem=12.735606 mels_per_s=78.520015 bytes=80000000 GB=0.080000 GBps=0.628160 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=10000000 threads=8 ms=491.376621 s_per_elem=0.000000 ns_per_elem=49.137662 mels_per_s=20.350989 bytes=80000000 GB=0.080000 GBps=0.162808 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=10000000 threads=8 ms=457.461713 s_per_elem=0.000000 ns_per_elem=45.746171 mels_per_s=21.859753 bytes=80000000 GB=0.080000 GBps=0.174878 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=10000000 threads=8 ms=20259.404683 s_per_elem=0.000002 ns_per_elem=2025.940468 mels_per_s=0.493598 bytes=80000000 GB=0.080000 GBps=0.003949 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=10000000 threads=8 ms=3499.314379 s_per_elem=0.000000 ns_per_elem=349.931438 mels_per_s=2.857703 bytes=80000000 GB=0.080000 GBps=0.022862 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N        = 1000000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=1000000 threads=8 ms=83.429369 s_per_elem=0.000000 ns_per_elem=83.429369 mels_per_s=11.986187 bytes=8000000 GB=0.008000 GBps=0.095889 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=1000000 threads=8 ms=15.077175 s_per_elem=0.000000 ns_per_elem=15.077175 mels_per_s=66.325422 bytes=8000000 GB=0.008000 GBps=0.530603 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=1000000 threads=8 ms=26.531846 s_per_elem=0.000000 ns_per_elem=26.531846 mels_per_s=37.690555 bytes=8000000 GB=0.008000 GBps=0.301524 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=1000000 threads=8 ms=23.541492 s_per_elem=0.000000 ns_per_elem=23.541492 mels_per_s=42.478191 bytes=8000000 GB=0.008000 GBps=0.339826 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=1000000 threads=8 ms=12.734226 s_per_elem=0.000000 ns_per_elem=12.734226 mels_per_s=78.528526 bytes=8000000 GB=0.008000 GBps=0.628228 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=1000000 threads=8 ms=12.649158 s_per_elem=0.000000 ns_per_elem=12.649158 mels_per_s=79.056646 bytes=8000000 GB=0.008000 GBps=0.632453 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=1000000 threads=8 ms=48.024663 s_per_elem=0.000000 ns_per_elem=48.024663 mels_per_s=20.822634 bytes=8000000 GB=0.008000 GBps=0.166581 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=1000000 threads=8 ms=44.971683 s_per_elem=0.000000 ns_per_elem=44.971683 mels_per_s=22.236215 bytes=8000000 GB=0.008000 GBps=0.177890 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=1000000 threads=8 ms=858.201441 s_per_elem=0.000001 ns_per_elem=858.201441 mels_per_s=1.165228 bytes=8000000 GB=0.008000 GBps=0.009322 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=1000000 threads=8 ms=156.910187 s_per_elem=0.000000 ns_per_elem=156.910187 mels_per_s=6.373073 bytes=8000000 GB=0.008000 GBps=0.050985 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N        = 100000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=100000 threads=8 ms=8.473123 s_per_elem=0.000000 ns_per_elem=84.731230 mels_per_s=11.802024 bytes=800000 GB=0.000800 GBps=0.094416 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=100000 threads=8 ms=2.979759 s_per_elem=0.000000 ns_per_elem=29.797590 mels_per_s=33.559761 bytes=800000 GB=0.000800 GBps=0.268478 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=100000 threads=8 ms=2.579098 s_per_elem=0.000000 ns_per_elem=25.790980 mels_per_s=38.773246 bytes=800000 GB=0.000800 GBps=0.310186 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=100000 threads=8 ms=2.696162 s_per_elem=0.000000 ns_per_elem=26.961620 mels_per_s=37.089759 bytes=800000 GB=0.000800 GBps=0.296718 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=100000 threads=8 ms=1.263310 s_per_elem=0.000000 ns_per_elem=12.633100 mels_per_s=79.157135 bytes=800000 GB=0.000800 GBps=0.633257 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=100000 threads=8 ms=1.264042 s_per_elem=0.000000 ns_per_elem=12.640420 mels_per_s=79.111295 bytes=800000 GB=0.000800 GBps=0.632890 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=100000 threads=8 ms=4.772883 s_per_elem=0.000000 ns_per_elem=47.728830 mels_per_s=20.951697 bytes=800000 GB=0.000800 GBps=0.167614 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=100000 threads=8 ms=4.904800 s_per_elem=0.000000 ns_per_elem=49.048000 mels_per_s=20.388191 bytes=800000 GB=0.000800 GBps=0.163106 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=100000 threads=8 ms=78.157291 s_per_elem=0.000001 ns_per_elem=781.572910 mels_per_s=1.279471 bytes=800000 GB=0.000800 GBps=0.010236 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=100000 threads=8 ms=14.837881 s_per_elem=0.000000 ns_per_elem=148.378810 mels_per_s=6.739507 bytes=800000 GB=0.000800 GBps=0.053916 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N        = 10000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=10000 threads=8 ms=2.017803 s_per_elem=0.000000 ns_per_elem=201.780300 mels_per_s=4.955885 bytes=80000 GB=0.000080 GBps=0.039647 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=10000 threads=8 ms=1.044166 s_per_elem=0.000000 ns_per_elem=104.416600 mels_per_s=9.577021 bytes=80000 GB=0.000080 GBps=0.076616 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=10000 threads=8 ms=0.385105 s_per_elem=0.000000 ns_per_elem=38.510500 mels_per_s=25.966944 bytes=80000 GB=0.000080 GBps=0.207736 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=10000 threads=8 ms=0.808723 s_per_elem=0.000000 ns_per_elem=80.872300 mels_per_s=12.365173 bytes=80000 GB=0.000080 GBps=0.098921 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=10000 threads=8 ms=0.306402 s_per_elem=0.000000 ns_per_elem=30.640200 mels_per_s=32.636863 bytes=80000 GB=0.000080 GBps=0.261095 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=10000 threads=8 ms=0.288911 s_per_elem=0.000000 ns_per_elem=28.891100 mels_per_s=34.612735 bytes=80000 GB=0.000080 GBps=0.276902 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=10000 threads=8 ms=0.997570 s_per_elem=0.000000 ns_per_elem=99.757000 mels_per_s=10.024359 bytes=80000 GB=0.000080 GBps=0.080195 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=10000 threads=8 ms=0.797181 s_per_elem=0.000000 ns_per_elem=79.718100 mels_per_s=12.544203 bytes=80000 GB=0.000080 GBps=0.100354 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=10000 threads=8 ms=6.650627 s_per_elem=0.000001 ns_per_elem=665.062700 mels_per_s=1.503618 bytes=80000 GB=0.000080 GBps=0.012029 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=10000 threads=8 ms=3.222726 s_per_elem=0.000000 ns_per_elem=322.272600 mels_per_s=3.102963 bytes=80000 GB=0.000080 GBps=0.024824 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N        = 1000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=1000 threads=8 ms=0.124730 s_per_elem=0.000000 ns_per_elem=124.730000 mels_per_s=8.017317 bytes=8000 GB=0.000008 GBps=0.064139 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=1000 threads=8 ms=0.761264 s_per_elem=0.000001 ns_per_elem=761.264000 mels_per_s=1.313605 bytes=8000 GB=0.000008 GBps=0.010509 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=1000 threads=8 ms=0.076293 s_per_elem=0.000000 ns_per_elem=76.293000 mels_per_s=13.107362 bytes=8000 GB=0.000008 GBps=0.104859 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=1000 threads=8 ms=0.114496 s_per_elem=0.000000 ns_per_elem=114.496000 mels_per_s=8.733930 bytes=8000 GB=0.000008 GBps=0.069871 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=1000 threads=8 ms=0.054854 s_per_elem=0.000000 ns_per_elem=54.854000 mels_per_s=18.230211 bytes=8000 GB=0.000008 GBps=0.145842 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=1000 threads=8 ms=0.060337 s_per_elem=0.000000 ns_per_elem=60.337000 mels_per_s=16.573578 bytes=8000 GB=0.000008 GBps=0.132589 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=1000 threads=8 ms=0.221960 s_per_elem=0.000000 ns_per_elem=221.960000 mels_per_s=4.505316 bytes=8000 GB=0.000008 GBps=0.036043 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=1000 threads=8 ms=0.213279 s_per_elem=0.000000 ns_per_elem=213.279000 mels_per_s=4.688694 bytes=8000 GB=0.000008 GBps=0.037510 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=1000 threads=8 ms=1.093010 s_per_elem=0.000001 ns_per_elem=1093.010000 mels_per_s=0.914905 bytes=8000 GB=0.000008 GBps=0.007319 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000_min0_max999999_dtypeuint64_seed42_val0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=1000 threads=8 ms=0.475408 s_per_elem=0.000000 ns_per_elem=475.408000 mels_per_s=2.103456 bytes=8000 GB=0.000008 GBps=0.016828 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin
+  N        = 100
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=100 threads=8 ms=0.063176 s_per_elem=0.000001 ns_per_elem=631.760000 mels_per_s=1.582880 bytes=800 GB=0.000001 GBps=0.012663 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=100 threads=8 ms=0.898520 s_per_elem=0.000009 ns_per_elem=8985.200000 mels_per_s=0.111294 bytes=800 GB=0.000001 GBps=0.000890 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=100 threads=8 ms=0.006298 s_per_elem=0.000000 ns_per_elem=62.980000 mels_per_s=15.878057 bytes=800 GB=0.000001 GBps=0.127024 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=100 threads=8 ms=0.024342 s_per_elem=0.000000 ns_per_elem=243.420000 mels_per_s=4.108126 bytes=800 GB=0.000001 GBps=0.032865 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=100 threads=8 ms=0.006548 s_per_elem=0.000000 ns_per_elem=65.480000 mels_per_s=15.271839 bytes=800 GB=0.000001 GBps=0.122175 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=100 threads=8 ms=0.006514 s_per_elem=0.000000 ns_per_elem=65.140000 mels_per_s=15.351551 bytes=800 GB=0.000001 GBps=0.122812 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=100 threads=8 ms=0.031222 s_per_elem=0.000000 ns_per_elem=312.220000 mels_per_s=3.202870 bytes=800 GB=0.000001 GBps=0.025623 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=100 threads=8 ms=0.027054 s_per_elem=0.000000 ns_per_elem=270.540000 mels_per_s=3.696311 bytes=800 GB=0.000001 GBps=0.029570 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=100 threads=8 ms=0.077687 s_per_elem=0.000001 ns_per_elem=776.870000 mels_per_s=1.287217 bytes=800 GB=0.000001 GBps=0.010298 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100_min0_max999999_dtypeuint64_seed42_val0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=100 threads=8 ms=0.159763 s_per_elem=0.000002 ns_per_elem=1597.630000 mels_per_s=0.625927 bytes=800 GB=0.000001 GBps=0.005007 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N        = 100000000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=100000000 threads=8 ms=11953.845365 s_per_elem=0.000000 ns_per_elem=119.538454 mels_per_s=8.365509 bytes=800000000 GB=0.800000 GBps=0.066924 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=100000000 threads=8 ms=2159.990398 s_per_elem=0.000000 ns_per_elem=21.599904 mels_per_s=46.296502 bytes=800000000 GB=0.800000 GBps=0.370372 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=100000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800000000 GB=0.800000 GBps=0.000000 sorted=false match_ref=false error="Counting sort range too large: 4294967294"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=100000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800000000 GB=0.800000 GBps=0.000000 sorted=false match_ref=false error="Counting sort (OMP) range too large: 4294967294"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=100000000 threads=8 ms=27871.342987 s_per_elem=0.000000 ns_per_elem=278.713430 mels_per_s=3.587915 bytes=800000000 GB=0.800000 GBps=0.028703 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=100000000 threads=8 ms=12098.296504 s_per_elem=0.000000 ns_per_elem=120.982965 mels_per_s=8.265626 bytes=800000000 GB=0.800000 GBps=0.066125 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=100000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800000000 GB=0.800000 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort range too large: 4294967294"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=100000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800000000 GB=0.800000 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort (OMP) range too large: 4294967294"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=100000000 threads=8 ms=290926.946935 s_per_elem=0.000003 ns_per_elem=2909.269469 mels_per_s=0.343729 bytes=800000000 GB=0.800000 GBps=0.002750 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=100000000 threads=8 ms=54832.216566 s_per_elem=0.000001 ns_per_elem=548.322166 mels_per_s=1.823745 bytes=800000000 GB=0.800000 GBps=0.014590 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N        = 10000000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=10000000 threads=8 ms=1183.482903 s_per_elem=0.000000 ns_per_elem=118.348290 mels_per_s=8.449636 bytes=80000000 GB=0.080000 GBps=0.067597 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=10000000 threads=8 ms=216.791858 s_per_elem=0.000000 ns_per_elem=21.679186 mels_per_s=46.127194 bytes=80000000 GB=0.080000 GBps=0.369018 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=10000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=80000000 GB=0.080000 GBps=0.000000 sorted=false match_ref=false error="Counting sort range too large: 4294967090"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=10000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=80000000 GB=0.080000 GBps=0.000000 sorted=false match_ref=false error="Counting sort (OMP) range too large: 4294967090"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=10000000 threads=8 ms=2371.421486 s_per_elem=0.000000 ns_per_elem=237.142149 mels_per_s=4.216880 bytes=80000000 GB=0.080000 GBps=0.033735 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=10000000 threads=8 ms=1194.815495 s_per_elem=0.000000 ns_per_elem=119.481550 mels_per_s=8.369493 bytes=80000000 GB=0.080000 GBps=0.066956 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=10000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=80000000 GB=0.080000 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort range too large: 4294967090"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=10000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=80000000 GB=0.080000 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort (OMP) range too large: 4294967090"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=10000000 threads=8 ms=26992.564187 s_per_elem=0.000003 ns_per_elem=2699.256419 mels_per_s=0.370472 bytes=80000000 GB=0.080000 GBps=0.002964 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=10000000 threads=8 ms=5198.911368 s_per_elem=0.000001 ns_per_elem=519.891137 mels_per_s=1.923480 bytes=80000000 GB=0.080000 GBps=0.015388 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N        = 1000000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=1000000 threads=8 ms=88.799999 s_per_elem=0.000000 ns_per_elem=88.799999 mels_per_s=11.261261 bytes=8000000 GB=0.008000 GBps=0.090090 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=1000000 threads=8 ms=17.346782 s_per_elem=0.000000 ns_per_elem=17.346782 mels_per_s=57.647580 bytes=8000000 GB=0.008000 GBps=0.461181 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=1000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=8000000 GB=0.008000 GBps=0.000000 sorted=false match_ref=false error="Counting sort range too large: 4294966978"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=1000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=8000000 GB=0.008000 GBps=0.000000 sorted=false match_ref=false error="Counting sort (OMP) range too large: 4294966978"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=1000000 threads=8 ms=227.614439 s_per_elem=0.000000 ns_per_elem=227.614439 mels_per_s=4.393394 bytes=8000000 GB=0.008000 GBps=0.035147 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=1000000 threads=8 ms=156.519919 s_per_elem=0.000000 ns_per_elem=156.519919 mels_per_s=6.388963 bytes=8000000 GB=0.008000 GBps=0.051112 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=1000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=8000000 GB=0.008000 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort range too large: 4294966978"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=1000000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=8000000 GB=0.008000 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort (OMP) range too large: 4294966978"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=1000000 threads=8 ms=1356.320843 s_per_elem=0.000001 ns_per_elem=1356.320843 mels_per_s=0.737289 bytes=8000000 GB=0.008000 GBps=0.005898 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=1000000 threads=8 ms=233.966178 s_per_elem=0.000000 ns_per_elem=233.966178 mels_per_s=4.274122 bytes=8000000 GB=0.008000 GBps=0.034193 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N        = 100000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=100000 threads=8 ms=8.877735 s_per_elem=0.000000 ns_per_elem=88.777350 mels_per_s=11.264134 bytes=800000 GB=0.000800 GBps=0.090113 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=100000 threads=8 ms=2.488689 s_per_elem=0.000000 ns_per_elem=24.886890 mels_per_s=40.181799 bytes=800000 GB=0.000800 GBps=0.321454 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=100000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800000 GB=0.000800 GBps=0.000000 sorted=false match_ref=false error="Counting sort range too large: 4294963899"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=100000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800000 GB=0.000800 GBps=0.000000 sorted=false match_ref=false error="Counting sort (OMP) range too large: 4294963899"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=100000 threads=8 ms=37.823049 s_per_elem=0.000000 ns_per_elem=378.230490 mels_per_s=2.643891 bytes=800000 GB=0.000800 GBps=0.021151 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=100000 threads=8 ms=37.410704 s_per_elem=0.000000 ns_per_elem=374.107040 mels_per_s=2.673032 bytes=800000 GB=0.000800 GBps=0.021384 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=100000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800000 GB=0.000800 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort range too large: 4294963899"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=100000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800000 GB=0.000800 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort (OMP) range too large: 4294963899"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=100000 threads=8 ms=115.635970 s_per_elem=0.000001 ns_per_elem=1156.359700 mels_per_s=0.864783 bytes=800000 GB=0.000800 GBps=0.006918 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=100000 threads=8 ms=22.231301 s_per_elem=0.000000 ns_per_elem=222.313010 mels_per_s=4.498162 bytes=800000 GB=0.000800 GBps=0.035985 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N        = 10000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=10000 threads=8 ms=0.950806 s_per_elem=0.000000 ns_per_elem=95.080600 mels_per_s=10.517393 bytes=80000 GB=0.000080 GBps=0.084139 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=10000 threads=8 ms=1.122974 s_per_elem=0.000000 ns_per_elem=112.297400 mels_per_s=8.904926 bytes=80000 GB=0.000080 GBps=0.071239 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=10000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=80000 GB=0.000080 GBps=0.000000 sorted=false match_ref=false error="Counting sort range too large: 4294960158"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=10000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=80000 GB=0.000080 GBps=0.000000 sorted=false match_ref=false error="Counting sort (OMP) range too large: 4294960158"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=10000 threads=8 ms=3.724889 s_per_elem=0.000000 ns_per_elem=372.488900 mels_per_s=2.684644 bytes=80000 GB=0.000080 GBps=0.021477 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=10000 threads=8 ms=3.834917 s_per_elem=0.000000 ns_per_elem=383.491700 mels_per_s=2.607618 bytes=80000 GB=0.000080 GBps=0.020861 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=10000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=80000 GB=0.000080 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort range too large: 4294960158"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=10000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=80000 GB=0.000080 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort (OMP) range too large: 4294960158"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=10000 threads=8 ms=9.426449 s_per_elem=0.000001 ns_per_elem=942.644900 mels_per_s=1.060845 bytes=80000 GB=0.000080 GBps=0.008487 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 10000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=10000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=10000 threads=8 ms=3.236301 s_per_elem=0.000000 ns_per_elem=323.630100 mels_per_s=3.089947 bytes=80000 GB=0.000080 GBps=0.024720 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N        = 1000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=1000 threads=8 ms=0.448953 s_per_elem=0.000000 ns_per_elem=448.953000 mels_per_s=2.227405 bytes=8000 GB=0.000008 GBps=0.017819 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=1000 threads=8 ms=0.899129 s_per_elem=0.000001 ns_per_elem=899.129000 mels_per_s=1.112187 bytes=8000 GB=0.000008 GBps=0.008897 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=1000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=8000 GB=0.000008 GBps=0.000000 sorted=false match_ref=false error="Counting sort range too large: 4292118639"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=1000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=8000 GB=0.000008 GBps=0.000000 sorted=false match_ref=false error="Counting sort (OMP) range too large: 4292118639"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=1000 threads=8 ms=1.308903 s_per_elem=0.000001 ns_per_elem=1308.903000 mels_per_s=0.763999 bytes=8000 GB=0.000008 GBps=0.006112 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=1000 threads=8 ms=1.128215 s_per_elem=0.000001 ns_per_elem=1128.215000 mels_per_s=0.886356 bytes=8000 GB=0.000008 GBps=0.007091 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=1000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=8000 GB=0.000008 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort range too large: 4292118639"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=1000 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=8000 GB=0.000008 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort (OMP) range too large: 4292118639"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=1000 threads=8 ms=1.169340 s_per_elem=0.000001 ns_per_elem=1169.340000 mels_per_s=0.855183 bytes=8000 GB=0.000008 GBps=0.006841 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 1000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=1000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=1000 threads=8 ms=0.809468 s_per_elem=0.000001 ns_per_elem=809.468000 mels_per_s=1.235379 bytes=8000 GB=0.000008 GBps=0.009883 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N        = 100
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=100 threads=8 ms=0.063095 s_per_elem=0.000001 ns_per_elem=630.950000 mels_per_s=1.584912 bytes=800 GB=0.000001 GBps=0.012679 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=100 threads=8 ms=0.903944 s_per_elem=0.000009 ns_per_elem=9039.440000 mels_per_s=0.110626 bytes=800 GB=0.000001 GBps=0.000885 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=100 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800 GB=0.000001 GBps=0.000000 sorted=false match_ref=false error="Counting sort range too large: 2655890535"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=100 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800 GB=0.000001 GBps=0.000000 sorted=false match_ref=false error="Counting sort (OMP) range too large: 2655890535"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=100 threads=8 ms=0.161026 s_per_elem=0.000002 ns_per_elem=1610.260000 mels_per_s=0.621018 bytes=800 GB=0.000001 GBps=0.004968 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=100 threads=8 ms=0.173463 s_per_elem=0.000002 ns_per_elem=1734.630000 mels_per_s=0.576492 bytes=800 GB=0.000001 GBps=0.004612 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=100 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800 GB=0.000001 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort range too large: 2655890535"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=100 threads=8 ms=0.000000 s_per_elem=0.000000 ns_per_elem=0.000000 mels_per_s=0.000000 bytes=800 GB=0.000001 GBps=0.000000 sorted=false match_ref=false error="Pigeonhole sort (OMP) range too large: 2655890535"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=seq dtype=uint64 N=100 threads=8 ms=0.116911 s_per_elem=0.000001 ns_per_elem=1169.110000 mels_per_s=0.855352 bytes=800 GB=0.000001 GBps=0.006843 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin           --n=100           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bitonic impl=omp dtype=uint64 N=100 threads=8 ms=0.183283 s_per_elem=0.000002 ns_per_elem=1832.830000 mels_per_s=0.545604 bytes=800 GB=0.000001 GBps=0.004365 sorted=true match_ref=true error="none"
+--------------------------------------------------
+
+---- Dataset: gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin ----
+  BIN_PATH = /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N        = 100000000
+
+Running combination:
+  ALGO    = radix
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=seq dtype=uint64 N=100000000 threads=8 ms=9394.528422 s_per_elem=0.000000 ns_per_elem=93.945284 mels_per_s=10.644494 bytes=800000000 GB=0.800000 GBps=0.085156 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = radix
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=radix           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=radix impl=omp dtype=uint64 N=100000000 threads=8 ms=1674.958546 s_per_elem=0.000000 ns_per_elem=16.749585 mels_per_s=59.702970 bytes=800000000 GB=0.800000 GBps=0.477624 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=seq dtype=uint64 N=100000000 threads=8 ms=2872.074295 s_per_elem=0.000000 ns_per_elem=28.720743 mels_per_s=34.818041 bytes=800000000 GB=0.800000 GBps=0.278544 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = counting
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=counting           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=counting impl=omp dtype=uint64 N=100000000 threads=8 ms=1847.763477 s_per_elem=0.000000 ns_per_elem=18.477635 mels_per_s=54.119481 bytes=800000000 GB=0.800000 GBps=0.432956 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=seq dtype=uint64 N=100000000 threads=8 ms=33019.185315 s_per_elem=0.000000 ns_per_elem=330.191853 mels_per_s=3.028542 bytes=800000000 GB=0.800000 GBps=0.024228 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bucket
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bucket           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=bucket impl=omp dtype=uint64 N=100000000 threads=8 ms=22507.799429 s_per_elem=0.000000 ns_per_elem=225.077994 mels_per_s=4.442904 bytes=800000000 GB=0.800000 GBps=0.035543 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=seq dtype=uint64 N=100000000 threads=8 ms=5536.806585 s_per_elem=0.000000 ns_per_elem=55.368066 mels_per_s=18.060952 bytes=800000000 GB=0.800000 GBps=0.144488 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = pigeonhole
+  IMPL    = omp
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=pigeonhole           --impl=omp           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check
+algo=pigeonhole impl=omp dtype=uint64 N=100000000 threads=8 ms=5012.921024 s_per_elem=0.000000 ns_per_elem=50.129210 mels_per_s=19.948449 bytes=800000000 GB=0.800000 GBps=0.159588 sorted=true match_ref=true error="none"
+--------------------------------------------------
+Running combination:
+  ALGO    = bitonic
+  IMPL    = seq
+  DTYPE   = uint64
+  N       = 100000000
+  THREADS = 8
+  REPEATS = 3
+  WARMUP  = 1
+
+Command: ./cpu_sort_bench           --algo=bitonic           --impl=seq           --dtype=uint64           --input=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin           --n=100000000           --threads=8           --repeats=3           --warmup=1           --csv=/mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/logs/cpu_bench_uint64.csv --check

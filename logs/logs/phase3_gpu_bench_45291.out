@@ -1,0 +1,2919 @@
+=== Loading Modules ===
+=== Environment Ready ===
+=== Starting Phase 3 GPU Sweep ===
+-----------------------------------------------------------
+Running: dist=uniform, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.08336, total_ms = 1.1286
+Run 2: kernel_ms = 0.879584, total_ms = 0.920705
+Run 3: kernel_ms = 0.934304, total_ms = 0.976503
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.966 ± 0.105
+Total ms  : 1.009 ± 0.108
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.271232, total_ms = 0.292341
+Run 2: kernel_ms = 0.269472, total_ms = 0.286577
+Run 3: kernel_ms = 0.26048, total_ms = 0.276219
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.267 ± 0.006
+Total ms  : 0.285 ± 0.008
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.54102, total_ms = 1.55352
+Run 2: kernel_ms = 1.05955, total_ms = 1.06659
+Run 3: kernel_ms = 1.04787, total_ms = 1.05587
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.216 ± 0.281
+Total ms  : 1.225 ± 0.284
+============================================================
+-----------------------------------------------------------
+Running: dist=uniform, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.14525, total_ms = 2.19018
+Run 2: kernel_ms = 1.93123, total_ms = 1.97328
+Run 3: kernel_ms = 1.9241, total_ms = 1.96589
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.000 ± 0.126
+Total ms  : 2.043 ± 0.127
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.661184, total_ms = 0.740812
+Run 2: kernel_ms = 0.650752, total_ms = 0.707273
+Run 3: kernel_ms = 0.652064, total_ms = 0.705766
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.655 ± 0.006
+Total ms  : 0.718 ± 0.020
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.74346, total_ms = 2.77005
+Run 2: kernel_ms = 2.28438, total_ms = 2.3086
+Run 3: kernel_ms = 2.30086, total_ms = 2.32541
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.443 ± 0.260
+Total ms  : 2.468 ± 0.262
+============================================================
+-----------------------------------------------------------
+Running: dist=uniform, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 12.6362, total_ms = 12.6844
+Run 2: kernel_ms = 12.4307, total_ms = 12.4768
+Run 3: kernel_ms = 12.442, total_ms = 12.4886
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 12.503 ± 0.116
+Total ms  : 12.550 ± 0.117
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 7.72339, total_ms = 7.83767
+Run 2: kernel_ms = 7.70906, total_ms = 7.84766
+Run 3: kernel_ms = 7.71078, total_ms = 7.83382
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 7.714 ± 0.008
+Total ms  : 7.840 ± 0.007
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.083, total_ms = 14.1012
+Run 2: kernel_ms = 13.6636, total_ms = 13.684
+Run 3: kernel_ms = 13.6412, total_ms = 13.6618
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 13.796 ± 0.249
+Total ms  : 13.816 ± 0.248
+============================================================
+-----------------------------------------------------------
+Running: dist=uniform, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 115.664, total_ms = 115.713
+Run 2: kernel_ms = 115.427, total_ms = 115.473
+Run 3: kernel_ms = 115.415, total_ms = 115.463
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 115.502 ± 0.140
+Total ms  : 115.550 ± 0.142
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 138.486, total_ms = 139.154
+Run 2: kernel_ms = 138.471, total_ms = 139.497
+Run 3: kernel_ms = 138.472, total_ms = 139.498
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 138.476 ± 0.009
+Total ms  : 139.383 ± 0.198
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 124.784, total_ms = 124.8
+Run 2: kernel_ms = 124.367, total_ms = 124.383
+Run 3: kernel_ms = 124.301, total_ms = 124.318
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 124.484 ± 0.262
+Total ms  : 124.500 ± 0.262
+============================================================
+-----------------------------------------------------------
+Running: dist=uniform, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1150.14, total_ms = 1150.22
+Run 2: kernel_ms = 1149.96, total_ms = 1150.03
+Run 3: kernel_ms = 1149.96, total_ms = 1150.01
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1150.020 ± 0.106
+Total ms  : 1150.084 ± 0.115
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1478.49, total_ms = 1484.05
+Run 2: kernel_ms = 1478.5, total_ms = 1487.83
+Run 3: kernel_ms = 1478.49, total_ms = 1487.76
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1478.492 ± 0.008
+Total ms  : 1486.548 ± 2.159
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1236.39, total_ms = 1236.42
+Run 2: kernel_ms = 1236.15, total_ms = 1236.18
+Run 3: kernel_ms = 1236.09, total_ms = 1236.12
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1236.211 ± 0.160
+Total ms  : 1236.242 ± 0.158
+============================================================
+[WARN] Missing dataset: guassian n=10000
+[WARN] Missing dataset: guassian n=100000
+[WARN] Missing dataset: guassian n=1000000
+[WARN] Missing dataset: guassian n=10000000
+[WARN] Missing dataset: guassian n=100000000
+-----------------------------------------------------------
+Running: dist=exponential, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.08374, total_ms = 1.12866
+Run 2: kernel_ms = 0.880832, total_ms = 0.922265
+Run 3: kernel_ms = 0.87088, total_ms = 0.919328
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.945 ± 0.120
+Total ms  : 0.990 ± 0.120
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.272832, total_ms = 0.294373
+Run 2: kernel_ms = 0.260224, total_ms = 0.277901
+Run 3: kernel_ms = 0.263072, total_ms = 0.278338
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.265 ± 0.007
+Total ms  : 0.284 ± 0.009
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.4761, total_ms = 1.48693
+Run 2: kernel_ms = 1.04416, total_ms = 1.05155
+Run 3: kernel_ms = 1.0127, total_ms = 1.02031
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.178 ± 0.259
+Total ms  : 1.186 ± 0.261
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.12938, total_ms = 2.17562
+Run 2: kernel_ms = 1.98163, total_ms = 2.02294
+Run 3: kernel_ms = 1.93203, total_ms = 1.97376
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.014 ± 0.103
+Total ms  : 2.057 ± 0.105
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.660192, total_ms = 0.73557
+Run 2: kernel_ms = 0.655168, total_ms = 0.709758
+Run 3: kernel_ms = 0.65072, total_ms = 0.704894
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.655 ± 0.005
+Total ms  : 0.717 ± 0.016
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.68371, total_ms = 2.70744
+Run 2: kernel_ms = 2.27267, total_ms = 2.29736
+Run 3: kernel_ms = 2.26042, total_ms = 2.28509
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.406 ± 0.241
+Total ms  : 2.430 ± 0.240
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 12.6156, total_ms = 12.6638
+Run 2: kernel_ms = 12.4487, total_ms = 12.4945
+Run 3: kernel_ms = 12.532, total_ms = 12.5771
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 12.532 ± 0.083
+Total ms  : 12.578 ± 0.085
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 7.71421, total_ms = 7.82889
+Run 2: kernel_ms = 7.70787, total_ms = 7.84604
+Run 3: kernel_ms = 7.70438, total_ms = 7.83938
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 7.709 ± 0.005
+Total ms  : 7.838 ± 0.009
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.0279, total_ms = 14.046
+Run 2: kernel_ms = 13.5892, total_ms = 13.6093
+Run 3: kernel_ms = 13.5763, total_ms = 13.5966
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 13.731 ± 0.257
+Total ms  : 13.751 ± 0.256
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 115.482, total_ms = 115.531
+Run 2: kernel_ms = 115.284, total_ms = 115.336
+Run 3: kernel_ms = 115.248, total_ms = 115.295
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 115.338 ± 0.126
+Total ms  : 115.387 ± 0.126
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 138.44, total_ms = 139.104
+Run 2: kernel_ms = 138.445, total_ms = 139.477
+Run 3: kernel_ms = 138.441, total_ms = 139.471
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 138.442 ± 0.003
+Total ms  : 139.351 ± 0.214
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 124.604, total_ms = 124.623
+Run 2: kernel_ms = 124.185, total_ms = 124.202
+Run 3: kernel_ms = 124.195, total_ms = 124.213
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 124.328 ± 0.239
+Total ms  : 124.346 ± 0.240
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1148.98, total_ms = 1149.06
+Run 2: kernel_ms = 1148.74, total_ms = 1148.81
+Run 3: kernel_ms = 1148.76, total_ms = 1148.83
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1148.829 ± 0.135
+Total ms  : 1148.897 ± 0.139
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1478.36, total_ms = 1483.91
+Run 2: kernel_ms = 1478.28, total_ms = 1487.54
+Run 3: kernel_ms = 1478.27, total_ms = 1487.47
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1478.302 ± 0.047
+Total ms  : 1486.308 ± 2.079
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1235.27, total_ms = 1235.29
+Run 2: kernel_ms = 1235.02, total_ms = 1235.05
+Run 3: kernel_ms = 1234.95, total_ms = 1234.99
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1235.078 ± 0.165
+Total ms  : 1235.109 ± 0.163
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.2048, total_ms = 1.25254
+Run 2: kernel_ms = 1.00374, total_ms = 1.04657
+Run 3: kernel_ms = 0.990304, total_ms = 1.03333
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.066 ± 0.120
+Total ms  : 1.111 ± 0.123
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.265664, total_ms = 0.28656
+Run 2: kernel_ms = 0.256128, total_ms = 0.273132
+Run 3: kernel_ms = 0.25312, total_ms = 0.26806
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.258 ± 0.007
+Total ms  : 0.276 ± 0.010
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.49779, total_ms = 1.50888
+Run 2: kernel_ms = 1.06698, total_ms = 1.07412
+Run 3: kernel_ms = 1.03226, total_ms = 1.03991
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.199 ± 0.259
+Total ms  : 1.208 ± 0.261
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.13158, total_ms = 2.17617
+Run 2: kernel_ms = 1.93434, total_ms = 1.9767
+Run 3: kernel_ms = 1.93165, total_ms = 1.97415
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.999 ± 0.115
+Total ms  : 2.042 ± 0.116
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.641472, total_ms = 0.720274
+Run 2: kernel_ms = 0.631328, total_ms = 0.689003
+Run 3: kernel_ms = 0.631264, total_ms = 0.684899
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.635 ± 0.006
+Total ms  : 0.698 ± 0.019
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 3.01907, total_ms = 3.03909
+Run 2: kernel_ms = 2.85693, total_ms = 2.8814
+Run 3: kernel_ms = 2.51706, total_ms = 2.54178
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.798 ± 0.256
+Total ms  : 2.821 ± 0.254
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 12.637, total_ms = 12.685
+Run 2: kernel_ms = 12.4508, total_ms = 12.4968
+Run 3: kernel_ms = 12.4254, total_ms = 12.4719
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 12.504 ± 0.116
+Total ms  : 12.551 ± 0.117
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 7.1584, total_ms = 7.27421
+Run 2: kernel_ms = 7.14832, total_ms = 7.28738
+Run 3: kernel_ms = 7.14685, total_ms = 7.28841
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 7.151 ± 0.006
+Total ms  : 7.283 ± 0.008
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.0142, total_ms = 14.0319
+Run 2: kernel_ms = 13.5948, total_ms = 13.6154
+Run 3: kernel_ms = 13.5838, total_ms = 13.6042
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 13.731 ± 0.245
+Total ms  : 13.750 ± 0.244
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 115.589, total_ms = 115.639
+Run 2: kernel_ms = 115.417, total_ms = 115.464
+Run 3: kernel_ms = 115.391, total_ms = 115.438
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 115.466 ± 0.108
+Total ms  : 115.514 ± 0.110
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 131.816, total_ms = 132.479
+Run 2: kernel_ms = 131.856, total_ms = 133.065
+Run 3: kernel_ms = 131.829, total_ms = 132.856
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 131.834 ± 0.020
+Total ms  : 132.800 ± 0.297
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 124.729, total_ms = 124.745
+Run 2: kernel_ms = 124.317, total_ms = 124.331
+Run 3: kernel_ms = 124.32, total_ms = 124.335
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 124.455 ± 0.237
+Total ms  : 124.470 ± 0.238
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1149.78, total_ms = 1149.86
+Run 2: kernel_ms = 1149.57, total_ms = 1149.64
+Run 3: kernel_ms = 1149.65, total_ms = 1149.71
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1149.667 ± 0.109
+Total ms  : 1149.737 ± 0.112
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1404.04, total_ms = 1409.68
+Run 2: kernel_ms = 1403.98, total_ms = 1413.23
+Run 3: kernel_ms = 1403.96, total_ms = 1413.21
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1403.995 ± 0.044
+Total ms  : 1412.044 ± 2.045
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1237.15, total_ms = 1237.18
+Run 2: kernel_ms = 1236.02, total_ms = 1236.05
+Run 3: kernel_ms = 1236.02, total_ms = 1236.05
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1236.399 ± 0.654
+Total ms  : 1236.431 ± 0.652
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.06816, total_ms = 1.1126
+Run 2: kernel_ms = 0.892032, total_ms = 0.933286
+Run 3: kernel_ms = 0.882624, total_ms = 0.927796
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.948 ± 0.105
+Total ms  : 0.991 ± 0.105
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.269056, total_ms = 0.289827
+Run 2: kernel_ms = 0.256256, total_ms = 0.273914
+Run 3: kernel_ms = 0.256704, total_ms = 0.271572
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.261 ± 0.007
+Total ms  : 0.278 ± 0.010
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.51216, total_ms = 1.5235
+Run 2: kernel_ms = 1.05645, total_ms = 1.06366
+Run 3: kernel_ms = 1.03942, total_ms = 1.04731
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.203 ± 0.268
+Total ms  : 1.211 ± 0.270
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.1551, total_ms = 2.19981
+Run 2: kernel_ms = 1.95264, total_ms = 1.99753
+Run 3: kernel_ms = 1.91146, total_ms = 1.95443
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.006 ± 0.130
+Total ms  : 2.051 ± 0.131
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.617504, total_ms = 0.694125
+Run 2: kernel_ms = 0.607712, total_ms = 0.665273
+Run 3: kernel_ms = 0.605632, total_ms = 0.660033
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.610 ± 0.006
+Total ms  : 0.673 ± 0.018
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.7904, total_ms = 2.8145
+Run 2: kernel_ms = 2.3241, total_ms = 2.34874
+Run 3: kernel_ms = 2.28912, total_ms = 2.31369
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.468 ± 0.280
+Total ms  : 2.492 ± 0.280
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 12.6166, total_ms = 12.6651
+Run 2: kernel_ms = 12.4233, total_ms = 12.4692
+Run 3: kernel_ms = 12.3988, total_ms = 12.4459
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 12.480 ± 0.119
+Total ms  : 12.527 ± 0.120
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 5.03562, total_ms = 5.14568
+Run 2: kernel_ms = 5.02352, total_ms = 5.15997
+Run 3: kernel_ms = 5.02522, total_ms = 5.15928
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 5.028 ± 0.007
+Total ms  : 5.155 ± 0.008
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 13.9861, total_ms = 14.0043
+Run 2: kernel_ms = 13.5255, total_ms = 13.5457
+Run 3: kernel_ms = 13.5193, total_ms = 13.5397
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 13.677 ± 0.268
+Total ms  : 13.697 ± 0.267
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 114.798, total_ms = 114.848
+Run 2: kernel_ms = 114.589, total_ms = 114.636
+Run 3: kernel_ms = 114.6, total_ms = 114.648
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 114.663 ± 0.118
+Total ms  : 114.711 ± 0.119
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 100.872, total_ms = 101.537
+Run 2: kernel_ms = 100.861, total_ms = 101.892
+Run 3: kernel_ms = 100.867, total_ms = 101.907
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 100.867 ± 0.005
+Total ms  : 101.778 ± 0.210
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 123.995, total_ms = 124.015
+Run 2: kernel_ms = 123.536, total_ms = 123.55
+Run 3: kernel_ms = 123.438, total_ms = 123.455
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 123.656 ± 0.298
+Total ms  : 123.673 ± 0.300
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1136.69, total_ms = 1136.76
+Run 2: kernel_ms = 1136.42, total_ms = 1136.49
+Run 3: kernel_ms = 1136.4, total_ms = 1136.47
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1136.507 ± 0.161
+Total ms  : 1136.574 ± 0.163
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1012.67, total_ms = 1018.24
+Run 2: kernel_ms = 1012.68, total_ms = 1021.93
+Run 3: kernel_ms = 1012.67, total_ms = 1021.99
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1012.676 ± 0.006
+Total ms  : 1020.718 ± 2.149
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1222.94, total_ms = 1222.97
+Run 2: kernel_ms = 1222.71, total_ms = 1222.74
+Run 3: kernel_ms = 1222.64, total_ms = 1222.67
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1222.762 ± 0.158
+Total ms  : 1222.794 ± 0.155
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.06298, total_ms = 1.10804
+Run 2: kernel_ms = 0.870752, total_ms = 0.911889
+Run 3: kernel_ms = 0.86416, total_ms = 0.905967
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.933 ± 0.113
+Total ms  : 0.975 ± 0.115
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.271328, total_ms = 0.291686
+Run 2: kernel_ms = 0.26096, total_ms = 0.278495
+Run 3: kernel_ms = 0.260576, total_ms = 0.275794
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.264 ± 0.006
+Total ms  : 0.282 ± 0.009
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.49264, total_ms = 1.50339
+Run 2: kernel_ms = 1.04512, total_ms = 1.05247
+Run 3: kernel_ms = 1.0344, total_ms = 1.04204
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.191 ± 0.262
+Total ms  : 1.199 ± 0.263
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.13165, total_ms = 2.17617
+Run 2: kernel_ms = 1.92224, total_ms = 1.96315
+Run 3: kernel_ms = 1.93018, total_ms = 1.97946
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.995 ± 0.119
+Total ms  : 2.040 ± 0.119
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.650624, total_ms = 0.726242
+Run 2: kernel_ms = 0.6408, total_ms = 0.697867
+Run 3: kernel_ms = 0.640704, total_ms = 0.693991
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.644 ± 0.006
+Total ms  : 0.706 ± 0.018
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.70022, total_ms = 2.7228
+Run 2: kernel_ms = 2.31139, total_ms = 2.33581
+Run 3: kernel_ms = 2.25898, total_ms = 2.28369
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.424 ± 0.241
+Total ms  : 2.447 ± 0.240
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 12.628, total_ms = 12.6772
+Run 2: kernel_ms = 12.434, total_ms = 12.4802
+Run 3: kernel_ms = 12.4666, total_ms = 12.5124
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 12.510 ± 0.104
+Total ms  : 12.557 ± 0.106
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 7.14259, total_ms = 7.25448
+Run 2: kernel_ms = 7.13552, total_ms = 7.27239
+Run 3: kernel_ms = 7.13866, total_ms = 7.2744
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 7.139 ± 0.004
+Total ms  : 7.267 ± 0.011
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.0528, total_ms = 14.0706
+Run 2: kernel_ms = 13.6252, total_ms = 13.6457
+Run 3: kernel_ms = 13.6142, total_ms = 13.6348
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 13.764 ± 0.250
+Total ms  : 13.784 ± 0.249
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 115.66, total_ms = 115.71
+Run 2: kernel_ms = 115.43, total_ms = 115.479
+Run 3: kernel_ms = 115.411, total_ms = 115.459
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 115.501 ± 0.139
+Total ms  : 115.549 ± 0.140
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 132.444, total_ms = 133.109
+Run 2: kernel_ms = 132.434, total_ms = 133.465
+Run 3: kernel_ms = 132.421, total_ms = 133.446
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 132.433 ± 0.012
+Total ms  : 133.340 ± 0.200
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 124.763, total_ms = 124.782
+Run 2: kernel_ms = 124.342, total_ms = 124.358
+Run 3: kernel_ms = 124.341, total_ms = 124.357
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 124.482 ± 0.243
+Total ms  : 124.499 ± 0.245
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1149.92, total_ms = 1150
+Run 2: kernel_ms = 1149.7, total_ms = 1149.77
+Run 3: kernel_ms = 1149.67, total_ms = 1149.73
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1149.766 ± 0.139
+Total ms  : 1149.835 ± 0.144
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1408.12, total_ms = 1413.64
+Run 2: kernel_ms = 1408.12, total_ms = 1417.39
+Run 3: kernel_ms = 1408.12, total_ms = 1417.33
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1408.122 ± 0.003
+Total ms  : 1416.119 ± 2.150
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1236.22, total_ms = 1236.25
+Run 2: kernel_ms = 1236.01, total_ms = 1236.04
+Run 3: kernel_ms = 1235.95, total_ms = 1235.98
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1236.060 ± 0.143
+Total ms  : 1236.092 ± 0.141
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.08048, total_ms = 1.13025
+Run 2: kernel_ms = 0.854688, total_ms = 0.898989
+Run 3: kernel_ms = 0.879392, total_ms = 0.924573
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.938 ± 0.124
+Total ms  : 0.985 ± 0.127
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.272448, total_ms = 0.293896
+Run 2: kernel_ms = 0.259552, total_ms = 0.276367
+Run 3: kernel_ms = 0.259296, total_ms = 0.274674
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.264 ± 0.008
+Total ms  : 0.282 ± 0.011
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.58938, total_ms = 1.60041
+Run 2: kernel_ms = 1.14486, total_ms = 1.15212
+Run 3: kernel_ms = 1.14352, total_ms = 1.1515
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.293 ± 0.257
+Total ms  : 1.301 ± 0.259
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.10941, total_ms = 2.15419
+Run 2: kernel_ms = 1.94442, total_ms = 1.98582
+Run 3: kernel_ms = 1.95411, total_ms = 1.99537
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.003 ± 0.093
+Total ms  : 2.045 ± 0.095
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.647808, total_ms = 0.724659
+Run 2: kernel_ms = 0.638144, total_ms = 0.695212
+Run 3: kernel_ms = 0.638048, total_ms = 0.692705
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.641 ± 0.006
+Total ms  : 0.704 ± 0.018
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.73398, total_ms = 2.75798
+Run 2: kernel_ms = 2.28477, total_ms = 2.30981
+Run 3: kernel_ms = 2.26128, total_ms = 2.28596
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.427 ± 0.266
+Total ms  : 2.451 ± 0.266
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 12.6696, total_ms = 12.718
+Run 2: kernel_ms = 12.4588, total_ms = 12.5053
+Run 3: kernel_ms = 12.4829, total_ms = 12.528
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 12.537 ± 0.115
+Total ms  : 12.584 ± 0.117
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 7.07955, total_ms = 7.19948
+Run 2: kernel_ms = 7.06832, total_ms = 7.20877
+Run 3: kernel_ms = 7.07171, total_ms = 7.21087
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 7.073 ± 0.006
+Total ms  : 7.206 ± 0.006
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.0295, total_ms = 14.0473
+Run 2: kernel_ms = 13.5917, total_ms = 13.6119
+Run 3: kernel_ms = 13.5908, total_ms = 13.611
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 13.737 ± 0.253
+Total ms  : 13.757 ± 0.252
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 115.577, total_ms = 115.626
+Run 2: kernel_ms = 115.378, total_ms = 115.425
+Run 3: kernel_ms = 115.376, total_ms = 115.424
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 115.444 ± 0.115
+Total ms  : 115.492 ± 0.117
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 130.589, total_ms = 131.259
+Run 2: kernel_ms = 130.586, total_ms = 131.619
+Run 3: kernel_ms = 130.59, total_ms = 131.617
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 130.588 ± 0.002
+Total ms  : 131.499 ± 0.207
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 124.745, total_ms = 124.761
+Run 2: kernel_ms = 124.304, total_ms = 124.319
+Run 3: kernel_ms = 124.352, total_ms = 124.369
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 124.467 ± 0.242
+Total ms  : 124.483 ± 0.242
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1149.9, total_ms = 1149.97
+Run 2: kernel_ms = 1149.72, total_ms = 1149.79
+Run 3: kernel_ms = 1149.66, total_ms = 1149.72
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1149.760 ± 0.126
+Total ms  : 1149.829 ± 0.130
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1393.55, total_ms = 1399.07
+Run 2: kernel_ms = 1393.55, total_ms = 1402.81
+Run 3: kernel_ms = 1393.55, total_ms = 1402.75
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1393.550 ± 0.004
+Total ms  : 1401.544 ± 2.147
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA H100 NVL MIG 1g.12gb
+  SMs                : 16
+  Global memory (MB) : 11008
+  Compute capability : 9.0
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 64
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1236.35, total_ms = 1236.37
+Run 2: kernel_ms = 1235.96, total_ms = 1236
+Run 3: kernel_ms = 1235.9, total_ms = 1235.93
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 64
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1236.068 ± 0.243
+Total ms  : 1236.100 ± 0.240
+============================================================
+=== Phase 3 GPU Sweep Complete ===

@@ -1,0 +1,33 @@
+
+real	1m12.355s
+user	1m10.666s
+sys	0m1.516s
+
+real	0m43.739s
+user	1m18.194s
+sys	0m1.507s
+
+real	0m47.885s
+user	0m46.822s
+sys	0m0.964s
+
+real	0m45.875s
+user	1m1.805s
+sys	0m0.975s
+
+real	0m42.317s
+user	0m41.263s
+sys	0m0.972s
+
+real	0m42.412s
+user	0m41.344s
+sys	0m0.978s
+
+real	0m56.730s
+user	0m54.396s
+sys	0m2.217s
+
+real	0m55.352s
+user	0m53.786s
+sys	0m2.220s
+[2025-11-27T16:25:46.616] error: *** JOB 45132 ON classct015 CANCELLED AT 2025-11-27T16:25:46 DUE to SIGNAL Terminated ***

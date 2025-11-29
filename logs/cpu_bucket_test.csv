@@ -1,0 +1,3 @@
+algo,impl,dtype,N,threads,ms,s_per_elem,ns_per_elem,mels_per_s,bytes,GB,GBps,sorted,match_ref,error
+bucket,seq,uint64,10000,8,2.38074,2.38074e-07,238.074,4.20037,80000,8e-05,0.033603,true,true,"none"
+bucket,omp,uint64,10000,8,2.90285,2.90285e-07,290.285,3.44489,80000,8e-05,0.0275591,true,true,"none"

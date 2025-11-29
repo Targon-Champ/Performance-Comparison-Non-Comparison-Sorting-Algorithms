@@ -1,0 +1,12 @@
+algo,impl,dtype,N,threads,ms,s_per_elem,ns_per_elem,mels_per_s,bytes,GB,GBps,sorted,match_ref,error
+radix,seq,uint64,1000000,8,313.641,3.13641e-07,313.641,3.18836,8e+06,0.008,0.0255069,true,true,"none"
+radix,omp,uint64,1000000,8,313.644,3.13644e-07,313.644,3.18833,8e+06,0.008,0.0255066,true,true,"none"
+counting,seq,uint64,1000000,8,0,0,0,0,8e+06,0.008,0,false,false,"Counting sort range too large: 4294954775"
+counting,omp,uint64,1000000,8,0,0,0,0,8e+06,0.008,0,false,false,"Counting sort (OMP) range too large: 4294954775"
+bucket,seq,uint64,1000000,8,313.722,3.13722e-07,313.722,3.18753,8e+06,0.008,0.0255003,true,true,"none"
+bucket,omp,uint64,1000000,8,313.748,3.13748e-07,313.748,3.18727,8e+06,0.008,0.0254982,true,true,"none"
+pigeonhole,seq,uint64,1000000,8,318.118,3.18118e-07,318.118,3.14348,8e+06,0.008,0.0251479,true,true,"none"
+pigeonhole,omp,uint64,1000000,8,313.613,3.13613e-07,313.613,3.18865,8e+06,0.008,0.0255092,true,true,"none"
+bitonic,seq,uint64,1000000,8,318.256,3.18256e-07,318.256,3.14213,8e+06,0.008,0.025137,true,true,"none"
+bitonic,omp,uint64,1000000,8,313.492,3.13492e-07,313.492,3.18987,8e+06,0.008,0.025519,true,true,"none"
+radix,seq,uint64,10000,1,0.56405,5.6405e-08,56.405,17.7289,80000,8e-05,0.141831,true,true,"none"

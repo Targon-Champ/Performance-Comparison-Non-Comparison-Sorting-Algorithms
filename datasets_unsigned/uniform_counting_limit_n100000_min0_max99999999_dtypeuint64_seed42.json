@@ -1,0 +1,9 @@
+{
+  "name": "uniform_counting_limit",
+  "n": 100000,
+  "dtype": "uint64",
+  "seed": 42,
+  "min": 0,
+  "max": 99999999,
+  "range_profile": "counting_limit"
+}

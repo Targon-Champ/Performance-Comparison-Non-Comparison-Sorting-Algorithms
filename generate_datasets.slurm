@@ -26,7 +26,7 @@ python -c "import sys; print('Python version:', sys.version)"
 
 # === Parameters ===
 
-DISTS=(uniform gaussian exponential sorted reverse)
+DISTS=(uniform gaussian exponential sorted reverse all_identical staggered)
 SIZES=(100 1000 10000 100000 1000000 10000000 100000000)
 
 # Signed range: [-2^31, 2^31-1]

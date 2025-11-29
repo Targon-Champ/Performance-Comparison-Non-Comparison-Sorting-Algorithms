@@ -1,0 +1,10 @@
+Python: /mnt/vstor/courses/csds438/sxi219/conda_envs/sorting/bin/python
+Conda env: /mnt/vstor/courses/csds438/sxi219/conda_envs/sorting
+Python version: 3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]
+Starting dataset generation at: Thu Nov 27 12:46:16 EST 2025
+Signed range:   -2147483648 to 2147483647
+Unsigned range: 0 to 4294967295
+------------------------------------------------------------
+SIGNED: dist=uniform, n=100, min=-2147483648, max=2147483647
+Output dir: datasets_signed
+------------------------------------------------------------

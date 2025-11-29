@@ -1,0 +1,3 @@
+algo,impl,dtype,N,threads,ms,s_per_elem,ns_per_elem,mels_per_s,bytes,GB,GBps,sorted,match_ref,error
+radix,seq,int64,10000,8,0.587142,5.87142e-08,58.7142,17.0317,80000,8e-05,0.136253,true,true,"none"
+radix,omp,int64,10000,8,0.958262,9.58262e-08,95.8262,10.4356,80000,8e-05,0.0834845,true,true,"none"

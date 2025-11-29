@@ -1,0 +1,9 @@
+{
+  "name": "all_equal",
+  "n": 100,
+  "dtype": "int64",
+  "seed": 42,
+  "min": -500000,
+  "max": 499999,
+  "range_profile": "pigeonhole_limit"
+}

@@ -1,0 +1,150 @@
+{
+    "seed": 42,
+  
+    "unsigned_output_dir": "../datasets_unsigned",
+    "signed_output_dir": "../datasets_signed",
+  
+    "n_values": [100, 1000, 10000, 100000, 1000000, 10000000, 100000000],
+  
+    "unsigned_ranges": {
+      "full": {
+        "min": 0,
+        "max": 4294967295
+      },
+      "counting_limit": {
+        "min": 0,
+        "max": 99999999
+      },
+      "pigeonhole_limit": {
+        "min": 0,
+        "max": 999999
+      }
+    },
+  
+    "signed_ranges": {
+      "full": {
+        "min": -2147483648,
+        "max": 2147483647
+      },
+      "counting_limit": {
+        "min": -50000000,
+        "max": 49999999
+      },
+      "pigeonhole_limit": {
+        "min": -500000,
+        "max": 499999
+      }
+    },
+  
+    "unsigned_distributions": [
+      {
+        "name": "uniform",
+        "type": "uniform",
+        "range_profile": "full"
+      },
+      {
+        "name": "gaussian",
+        "type": "gaussian",
+        "mu": 0.0,
+        "sigma": 100.0,
+        "range_profile": "full"
+      },
+      {
+        "name": "exponential",
+        "type": "exponential",
+        "lambda": 1.0,
+        "range_profile": "full"
+      },
+      {
+        "name": "sorted",
+        "type": "sorted",
+        "base": "uniform",
+        "range_profile": "full"
+      },
+      {
+        "name": "reverse",
+        "type": "reverse",
+        "base": "uniform",
+        "range_profile": "full"
+      },
+  
+      {
+        "name": "uniform_counting_limit",
+        "type": "uniform",
+        "range_profile": "counting_limit"
+      },
+      {
+        "name": "uniform_pigeonhole_limit",
+        "type": "uniform",
+        "range_profile": "pigeonhole_limit"
+      },
+      {
+        "name": "all_equal",
+        "type": "all_equal",
+        "range_profile": "pigeonhole_limit",
+        "value": 0
+      },
+      {
+        "name": "staggered",
+        "type": "staggered",
+        "range_profile": "full"
+      }
+    ],
+  
+    "signed_distributions": [
+      {
+        "name": "uniform",
+        "type": "uniform",
+        "range_profile": "full"
+      },
+      {
+        "name": "gaussian",
+        "type": "gaussian",
+        "mu": 0.0,
+        "sigma": 100.0,
+        "range_profile": "full"
+      },
+      {
+        "name": "exponential",
+        "type": "exponential",
+        "lambda": 1.0,
+        "range_profile": "full"
+      },
+      {
+        "name": "sorted",
+        "type": "sorted",
+        "base": "uniform",
+        "range_profile": "full"
+      },
+      {
+        "name": "reverse",
+        "type": "reverse",
+        "base": "uniform",
+        "range_profile": "full"
+      },
+  
+      {
+        "name": "uniform_counting_limit",
+        "type": "uniform",
+        "range_profile": "counting_limit"
+      },
+      {
+        "name": "uniform_pigeonhole_limit",
+        "type": "uniform",
+        "range_profile": "pigeonhole_limit"
+      },
+      {
+        "name": "all_equal",
+        "type": "all_equal",
+        "range_profile": "pigeonhole_limit",
+        "value": 0
+      },
+      {
+        "name": "staggered",
+        "type": "staggered",
+        "range_profile": "full"
+      }
+      
+    ]
+  }
+  

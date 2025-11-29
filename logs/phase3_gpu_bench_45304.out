@@ -1,0 +1,3399 @@
+=== Loading Modules ===
+=== Environment Ready ===
+=== Starting Phase 3 GPU Sweep ===
+-----------------------------------------------------------
+Running: dist=uniform, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 3.89779, total_ms = 3.94801
+Run 2: kernel_ms = 1.62109, total_ms = 1.66828
+Run 3: kernel_ms = 1.63478, total_ms = 1.68142
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.385 ± 1.311
+Total ms  : 2.433 ± 1.312
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.26912, total_ms = 0.296725
+Run 2: kernel_ms = 0.243904, total_ms = 0.263553
+Run 3: kernel_ms = 0.239712, total_ms = 0.258188
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.251 ± 0.016
+Total ms  : 0.273 ± 0.021
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.51395, total_ms = 2.52982
+Run 2: kernel_ms = 1.87568, total_ms = 1.89134
+Run 3: kernel_ms = 1.86634, total_ms = 1.88203
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.085 ± 0.371
+Total ms  : 2.101 ± 0.371
+============================================================
+-----------------------------------------------------------
+Running: dist=uniform, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.4717, total_ms = 14.5266
+Run 2: kernel_ms = 14.1522, total_ms = 14.2017
+Run 3: kernel_ms = 14.1678, total_ms = 14.212
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.264 ± 0.180
+Total ms  : 14.313 ± 0.185
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.493472, total_ms = 0.616682
+Run 2: kernel_ms = 0.47904, total_ms = 0.582912
+Run 3: kernel_ms = 0.47664, total_ms = 0.570807
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.483 ± 0.009
+Total ms  : 0.590 ± 0.024
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 15.7202, total_ms = 15.7886
+Run 2: kernel_ms = 15.022, total_ms = 15.0979
+Run 3: kernel_ms = 14.8124, total_ms = 14.8881
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 15.185 ± 0.475
+Total ms  : 15.258 ± 0.471
+============================================================
+-----------------------------------------------------------
+Running: dist=uniform, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 18.1877, total_ms = 18.2411
+Run 2: kernel_ms = 17.8765, total_ms = 17.9286
+Run 3: kernel_ms = 17.8645, total_ms = 17.9159
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 17.976 ± 0.183
+Total ms  : 18.029 ± 0.184
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 5.5337, total_ms = 5.69801
+Run 2: kernel_ms = 5.52109, total_ms = 5.71631
+Run 3: kernel_ms = 5.51696, total_ms = 5.70869
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 5.524 ± 0.009
+Total ms  : 5.708 ± 0.009
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 19.2064, total_ms = 19.3106
+Run 2: kernel_ms = 18.3551, total_ms = 18.4647
+Run 3: kernel_ms = 18.4094, total_ms = 18.5203
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 18.657 ± 0.477
+Total ms  : 18.765 ± 0.473
+============================================================
+-----------------------------------------------------------
+Running: dist=uniform, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 52.5085, total_ms = 52.5699
+Run 2: kernel_ms = 52.0018, total_ms = 52.0606
+Run 3: kernel_ms = 51.8349, total_ms = 51.8916
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 52.115 ± 0.351
+Total ms  : 52.174 ± 0.353
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 100.059, total_ms = 100.665
+Run 2: kernel_ms = 100.08, total_ms = 100.975
+Run 3: kernel_ms = 100.102, total_ms = 100.999
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 100.080 ± 0.022
+Total ms  : 100.880 ± 0.186
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 46.078, total_ms = 46.1962
+Run 2: kernel_ms = 45.1516, total_ms = 45.2753
+Run 3: kernel_ms = 45.1969, total_ms = 45.3214
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 45.476 ± 0.522
+Total ms  : 45.598 ± 0.519
+============================================================
+-----------------------------------------------------------
+Running: dist=uniform, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 319.442, total_ms = 319.519
+Run 2: kernel_ms = 318.869, total_ms = 318.923
+Run 3: kernel_ms = 319.098, total_ms = 319.174
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 319.136 ± 0.289
+Total ms  : 319.205 ± 0.299
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1086.68, total_ms = 1091.16
+Run 2: kernel_ms = 1086.71, total_ms = 1094.12
+Run 3: kernel_ms = 1086.7, total_ms = 1094.18
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1086.700 ± 0.016
+Total ms  : 1093.157 ± 1.726
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 325.392, total_ms = 325.515
+Run 2: kernel_ms = 324.633, total_ms = 324.766
+Run 3: kernel_ms = 324.62, total_ms = 324.749
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/uniform_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 324.882 ± 0.442
+Total ms  : 325.010 ± 0.437
+============================================================
+-----------------------------------------------------------
+Running: dist=gaussian, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.8983, total_ms = 1.95121
+Run 2: kernel_ms = 1.55974, total_ms = 1.60104
+Run 3: kernel_ms = 1.55603, total_ms = 1.59849
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.671 ± 0.197
+Total ms  : 1.717 ± 0.203
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.239488, total_ms = 0.265901
+Run 2: kernel_ms = 0.230016, total_ms = 0.247217
+Run 3: kernel_ms = 0.219264, total_ms = 0.234458
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.230 ± 0.010
+Total ms  : 0.249 ± 0.016
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.45914, total_ms = 2.47807
+Run 2: kernel_ms = 1.78138, total_ms = 1.79454
+Run 3: kernel_ms = 1.78582, total_ms = 1.80037
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.009 ± 0.390
+Total ms  : 2.024 ± 0.393
+============================================================
+-----------------------------------------------------------
+Running: dist=gaussian, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.0343, total_ms = 14.0768
+Run 2: kernel_ms = 13.6962, total_ms = 13.7371
+Run 3: kernel_ms = 13.7281, total_ms = 13.7674
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 13.820 ± 0.187
+Total ms  : 13.860 ± 0.188
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.4848, total_ms = 0.607274
+Run 2: kernel_ms = 0.467584, total_ms = 0.568991
+Run 3: kernel_ms = 0.4672, total_ms = 0.560166
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.473 ± 0.010
+Total ms  : 0.579 ± 0.025
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 15.4975, total_ms = 15.5901
+Run 2: kernel_ms = 14.7222, total_ms = 14.8195
+Run 3: kernel_ms = 14.7399, total_ms = 14.8359
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.987 ± 0.443
+Total ms  : 15.082 ± 0.440
+============================================================
+-----------------------------------------------------------
+Running: dist=gaussian, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 17.9281, total_ms = 17.9763
+Run 2: kernel_ms = 17.4597, total_ms = 17.5061
+Run 3: kernel_ms = 17.4433, total_ms = 17.4872
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 17.610 ± 0.275
+Total ms  : 17.657 ± 0.277
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 4.41008, total_ms = 4.56423
+Run 2: kernel_ms = 4.39632, total_ms = 4.58943
+Run 3: kernel_ms = 4.39366, total_ms = 4.57857
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 4.400 ± 0.009
+Total ms  : 4.577 ± 0.013
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 18.7754, total_ms = 18.9294
+Run 2: kernel_ms = 17.9514, total_ms = 18.1159
+Run 3: kernel_ms = 17.9416, total_ms = 18.1016
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n1000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 18.223 ± 0.479
+Total ms  : 18.382 ± 0.474
+============================================================
+-----------------------------------------------------------
+Running: dist=gaussian, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 48.9808, total_ms = 49.0479
+Run 2: kernel_ms = 48.4509, total_ms = 48.5117
+Run 3: kernel_ms = 48.2639, total_ms = 48.3206
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 48.565 ± 0.372
+Total ms  : 48.627 ± 0.377
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 80.8959, total_ms = 81.5068
+Run 2: kernel_ms = 80.8891, total_ms = 81.7862
+Run 3: kernel_ms = 80.8979, total_ms = 81.7944
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 80.894 ± 0.005
+Total ms  : 81.696 ± 0.164
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 43.0306, total_ms = 43.1464
+Run 2: kernel_ms = 42.3174, total_ms = 42.4412
+Run 3: kernel_ms = 42.185, total_ms = 42.3017
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n10000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 42.511 ± 0.455
+Total ms  : 42.630 ± 0.453
+============================================================
+-----------------------------------------------------------
+Running: dist=gaussian, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 290.661, total_ms = 290.736
+Run 2: kernel_ms = 289.822, total_ms = 289.874
+Run 3: kernel_ms = 289.901, total_ms = 289.963
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 290.128 ± 0.464
+Total ms  : 290.191 ± 0.474
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 825.524, total_ms = 830.155
+Run 2: kernel_ms = 825.909, total_ms = 833.294
+Run 3: kernel_ms = 825.872, total_ms = 833.249
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 825.768 ± 0.213
+Total ms  : 832.233 ± 1.799
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 296.41, total_ms = 296.542
+Run 2: kernel_ms = 295.514, total_ms = 295.631
+Run 3: kernel_ms = 295.489, total_ms = 295.612
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/gaussian_n100000000_min0_max4294967295_dtypeuint64_seed42_mu0.0_sigma100.0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 295.804 ± 0.524
+Total ms  : 295.928 ± 0.531
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.95853, total_ms = 2.0054
+Run 2: kernel_ms = 1.66602, total_ms = 1.70961
+Run 3: kernel_ms = 1.5799, total_ms = 1.62418
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.735 ± 0.198
+Total ms  : 1.780 ± 0.200
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.25072, total_ms = 0.276702
+Run 2: kernel_ms = 0.235136, total_ms = 0.252411
+Run 3: kernel_ms = 0.23296, total_ms = 0.249074
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.240 ± 0.010
+Total ms  : 0.259 ± 0.015
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.44813, total_ms = 2.46502
+Run 2: kernel_ms = 1.77158, total_ms = 1.78507
+Run 3: kernel_ms = 1.78262, total_ms = 1.79736
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.001 ± 0.387
+Total ms  : 2.016 ± 0.389
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.555, total_ms = 14.607
+Run 2: kernel_ms = 14.2015, total_ms = 14.2483
+Run 3: kernel_ms = 14.2118, total_ms = 14.2558
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.323 ± 0.201
+Total ms  : 14.370 ± 0.205
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.364224, total_ms = 0.485617
+Run 2: kernel_ms = 0.352032, total_ms = 0.444562
+Run 3: kernel_ms = 0.364672, total_ms = 0.457078
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.360 ± 0.007
+Total ms  : 0.462 ± 0.021
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 15.4536, total_ms = 15.5457
+Run 2: kernel_ms = 14.6921, total_ms = 14.7879
+Run 3: kernel_ms = 14.6865, total_ms = 14.7817
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.944 ± 0.441
+Total ms  : 15.038 ± 0.439
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 18.0203, total_ms = 18.075
+Run 2: kernel_ms = 17.65, total_ms = 17.6985
+Run 3: kernel_ms = 17.6366, total_ms = 17.6842
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 17.769 ± 0.218
+Total ms  : 17.819 ± 0.222
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 5.53702, total_ms = 5.69521
+Run 2: kernel_ms = 5.51898, total_ms = 5.66711
+Run 3: kernel_ms = 5.51306, total_ms = 5.65818
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 5.523 ± 0.012
+Total ms  : 5.674 ± 0.019
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 19.0738, total_ms = 19.2265
+Run 2: kernel_ms = 18.278, total_ms = 18.4362
+Run 3: kernel_ms = 18.2384, total_ms = 18.3983
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n1000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 18.530 ± 0.471
+Total ms  : 18.687 ± 0.468
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 52.2654, total_ms = 52.3267
+Run 2: kernel_ms = 51.9184, total_ms = 51.9723
+Run 3: kernel_ms = 51.7112, total_ms = 51.7698
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 51.965 ± 0.280
+Total ms  : 52.023 ± 0.282
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 99.811, total_ms = 100.417
+Run 2: kernel_ms = 99.799, total_ms = 100.682
+Run 3: kernel_ms = 99.9522, total_ms = 100.847
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 99.854 ± 0.085
+Total ms  : 100.648 ± 0.217
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 45.6889, total_ms = 45.8028
+Run 2: kernel_ms = 44.8259, total_ms = 44.9482
+Run 3: kernel_ms = 44.858, total_ms = 44.9811
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n10000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 45.124 ± 0.489
+Total ms  : 45.244 ± 0.484
+============================================================
+-----------------------------------------------------------
+Running: dist=exponential, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 316.275, total_ms = 316.358
+Run 2: kernel_ms = 315.927, total_ms = 315.982
+Run 3: kernel_ms = 316.008, total_ms = 316.074
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 316.070 ± 0.182
+Total ms  : 316.138 ± 0.196
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1086.47, total_ms = 1090.98
+Run 2: kernel_ms = 1086.54, total_ms = 1093.95
+Run 3: kernel_ms = 1086.58, total_ms = 1094.06
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1086.530 ± 0.053
+Total ms  : 1092.995 ± 1.744
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 323.202, total_ms = 323.327
+Run 2: kernel_ms = 322.258, total_ms = 322.386
+Run 3: kernel_ms = 322.738, total_ms = 322.859
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/exponential_n100000000_min0_max4294967295_dtypeuint64_seed42_lam1.0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 322.732 ± 0.472
+Total ms  : 322.858 ± 0.471
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.92992, total_ms = 1.97928
+Run 2: kernel_ms = 1.56502, total_ms = 1.60587
+Run 3: kernel_ms = 1.56256, total_ms = 1.60435
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.686 ± 0.211
+Total ms  : 1.730 ± 0.216
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.256, total_ms = 0.281608
+Run 2: kernel_ms = 0.229568, total_ms = 0.247313
+Run 3: kernel_ms = 0.230528, total_ms = 0.246864
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.239 ± 0.015
+Total ms  : 0.259 ± 0.020
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.42179, total_ms = 2.43847
+Run 2: kernel_ms = 1.78582, total_ms = 1.80109
+Run 3: kernel_ms = 1.79779, total_ms = 1.81265
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.002 ± 0.364
+Total ms  : 2.017 ± 0.365
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.3765, total_ms = 14.4373
+Run 2: kernel_ms = 13.9392, total_ms = 13.9828
+Run 3: kernel_ms = 13.9659, total_ms = 14.0088
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.094 ± 0.245
+Total ms  : 14.143 ± 0.255
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.356352, total_ms = 0.477183
+Run 2: kernel_ms = 0.346176, total_ms = 0.44223
+Run 3: kernel_ms = 0.339968, total_ms = 0.439425
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.347 ± 0.008
+Total ms  : 0.453 ± 0.021
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 15.4871, total_ms = 15.5813
+Run 2: kernel_ms = 14.7264, total_ms = 14.8226
+Run 3: kernel_ms = 14.7353, total_ms = 14.8319
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.983 ± 0.437
+Total ms  : 15.079 ± 0.435
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 18.0649, total_ms = 18.1281
+Run 2: kernel_ms = 17.6475, total_ms = 17.6984
+Run 3: kernel_ms = 17.9675, total_ms = 18.0125
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 17.893 ± 0.218
+Total ms  : 17.946 ± 0.222
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 5.11197, total_ms = 5.26684
+Run 2: kernel_ms = 5.09773, total_ms = 5.29437
+Run 3: kernel_ms = 5.09946, total_ms = 5.29759
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 5.103 ± 0.008
+Total ms  : 5.286 ± 0.017
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 19.0811, total_ms = 19.1852
+Run 2: kernel_ms = 18.1096, total_ms = 18.2176
+Run 3: kernel_ms = 18.1218, total_ms = 18.2328
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 18.437 ± 0.557
+Total ms  : 18.545 ± 0.554
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 52.7269, total_ms = 52.7886
+Run 2: kernel_ms = 52.3122, total_ms = 52.3732
+Run 3: kernel_ms = 52.081, total_ms = 52.1384
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 52.373 ± 0.327
+Total ms  : 52.433 ± 0.329
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 94.1609, total_ms = 94.7843
+Run 2: kernel_ms = 94.1625, total_ms = 95.067
+Run 3: kernel_ms = 94.165, total_ms = 95.0669
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 94.163 ± 0.002
+Total ms  : 94.973 ± 0.163
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 46.0531, total_ms = 46.1659
+Run 2: kernel_ms = 45.303, total_ms = 45.4304
+Run 3: kernel_ms = 45.2436, total_ms = 45.3647
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 45.533 ± 0.451
+Total ms  : 45.654 ± 0.445
+============================================================
+-----------------------------------------------------------
+Running: dist=staggered, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 320.436, total_ms = 320.51
+Run 2: kernel_ms = 319.939, total_ms = 319.993
+Run 3: kernel_ms = 320.125, total_ms = 320.183
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 320.167 ± 0.251
+Total ms  : 320.229 ± 0.261
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1018.42, total_ms = 1022.92
+Run 2: kernel_ms = 1018.44, total_ms = 1025.85
+Run 3: kernel_ms = 1018.42, total_ms = 1025.81
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1018.425 ± 0.013
+Total ms  : 1024.859 ± 1.678
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 326.064, total_ms = 326.188
+Run 2: kernel_ms = 325.672, total_ms = 325.801
+Run 3: kernel_ms = 325.748, total_ms = 325.875
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/staggered_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 325.828 ± 0.208
+Total ms  : 325.954 ± 0.205
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.89789, total_ms = 1.9459
+Run 2: kernel_ms = 1.50582, total_ms = 1.54345
+Run 3: kernel_ms = 1.49837, total_ms = 1.53808
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.634 ± 0.229
+Total ms  : 1.676 ± 0.234
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.244896, total_ms = 0.26994
+Run 2: kernel_ms = 0.236, total_ms = 0.253901
+Run 3: kernel_ms = 0.223904, total_ms = 0.24095
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.235 ± 0.011
+Total ms  : 0.255 ± 0.015
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.45536, total_ms = 2.4709
+Run 2: kernel_ms = 1.79344, total_ms = 1.80735
+Run 3: kernel_ms = 1.80272, total_ms = 1.81635
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.017 ± 0.380
+Total ms  : 2.032 ± 0.381
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.5266, total_ms = 14.5766
+Run 2: kernel_ms = 14.2038, total_ms = 14.2486
+Run 3: kernel_ms = 14.2028, total_ms = 14.2498
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.311 ± 0.187
+Total ms  : 14.358 ± 0.189
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.479008, total_ms = 0.602889
+Run 2: kernel_ms = 0.45872, total_ms = 0.555072
+Run 3: kernel_ms = 0.45888, total_ms = 0.555515
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.466 ± 0.012
+Total ms  : 0.571 ± 0.027
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 15.4554, total_ms = 15.5496
+Run 2: kernel_ms = 14.7247, total_ms = 14.8213
+Run 3: kernel_ms = 14.7191, total_ms = 14.8173
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.966 ± 0.423
+Total ms  : 15.063 ± 0.422
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 17.7876, total_ms = 17.8425
+Run 2: kernel_ms = 17.4494, total_ms = 17.5003
+Run 3: kernel_ms = 17.4341, total_ms = 17.4852
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 17.557 ± 0.200
+Total ms  : 17.609 ± 0.202
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 3.55866, total_ms = 3.71767
+Run 2: kernel_ms = 3.54256, total_ms = 3.73194
+Run 3: kernel_ms = 3.54275, total_ms = 3.7418
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 3.548 ± 0.009
+Total ms  : 3.730 ± 0.012
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 18.6856, total_ms = 18.8389
+Run 2: kernel_ms = 17.8392, total_ms = 17.9991
+Run 3: kernel_ms = 17.9202, total_ms = 18.0803
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n1000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 18.148 ± 0.467
+Total ms  : 18.306 ± 0.463
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 48.3314, total_ms = 48.3892
+Run 2: kernel_ms = 47.9927, total_ms = 48.049
+Run 3: kernel_ms = 47.7648, total_ms = 47.8235
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 48.030 ± 0.285
+Total ms  : 48.087 ± 0.285
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 69.7713, total_ms = 70.3838
+Run 2: kernel_ms = 69.7648, total_ms = 70.6575
+Run 3: kernel_ms = 69.7635, total_ms = 70.6633
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 69.767 ± 0.004
+Total ms  : 70.568 ± 0.160
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 42.6884, total_ms = 42.802
+Run 2: kernel_ms = 41.8586, total_ms = 41.979
+Run 3: kernel_ms = 41.7625, total_ms = 41.8829
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n10000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 42.103 ± 0.509
+Total ms  : 42.221 ± 0.505
+============================================================
+-----------------------------------------------------------
+Running: dist=all_equal, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 285.248, total_ms = 285.326
+Run 2: kernel_ms = 285.227, total_ms = 285.284
+Run 3: kernel_ms = 285.009, total_ms = 285.062
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 285.162 ± 0.132
+Total ms  : 285.224 ± 0.142
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 700.714, total_ms = 705.225
+Run 2: kernel_ms = 700.705, total_ms = 708.184
+Run 3: kernel_ms = 700.746, total_ms = 708.136
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 700.722 ± 0.022
+Total ms  : 707.182 ± 1.695
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 291.623, total_ms = 291.749
+Run 2: kernel_ms = 290.7, total_ms = 290.833
+Run 3: kernel_ms = 290.683, total_ms = 290.805
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/all_equal_n100000000_min0_max999999_dtypeuint64_seed42_val0.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 291.002 ± 0.538
+Total ms  : 291.129 ± 0.537
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.91034, total_ms = 1.96396
+Run 2: kernel_ms = 1.56099, total_ms = 1.60659
+Run 3: kernel_ms = 1.56464, total_ms = 1.61074
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.679 ± 0.201
+Total ms  : 1.727 ± 0.205
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.24576, total_ms = 0.273056
+Run 2: kernel_ms = 0.231232, total_ms = 0.248134
+Run 3: kernel_ms = 0.241664, total_ms = 0.259197
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.240 ± 0.007
+Total ms  : 0.260 ± 0.012
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.42822, total_ms = 2.4451
+Run 2: kernel_ms = 1.79075, total_ms = 1.80544
+Run 3: kernel_ms = 1.77677, total_ms = 1.79119
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.999 ± 0.372
+Total ms  : 2.014 ± 0.373
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.5912, total_ms = 14.6603
+Run 2: kernel_ms = 14.0996, total_ms = 14.1582
+Run 3: kernel_ms = 14.0972, total_ms = 14.1506
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.263 ± 0.285
+Total ms  : 14.323 ± 0.292
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.488224, total_ms = 0.611503
+Run 2: kernel_ms = 0.47104, total_ms = 0.568625
+Run 3: kernel_ms = 0.472384, total_ms = 0.568258
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.477 ± 0.010
+Total ms  : 0.583 ± 0.025
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 15.6569, total_ms = 15.7495
+Run 2: kernel_ms = 14.7335, total_ms = 14.8282
+Run 3: kernel_ms = 14.7285, total_ms = 14.8204
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 15.040 ± 0.535
+Total ms  : 15.133 ± 0.534
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 18.2804, total_ms = 18.3343
+Run 2: kernel_ms = 17.9317, total_ms = 17.984
+Run 3: kernel_ms = 17.9236, total_ms = 17.9739
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 18.045 ± 0.204
+Total ms  : 18.097 ± 0.205
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 5.13584, total_ms = 5.2938
+Run 2: kernel_ms = 5.11808, total_ms = 5.31859
+Run 3: kernel_ms = 5.11626, total_ms = 5.31289
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 5.123 ± 0.011
+Total ms  : 5.308 ± 0.013
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 19.1382, total_ms = 19.2947
+Run 2: kernel_ms = 18.3222, total_ms = 18.4814
+Run 3: kernel_ms = 18.3841, total_ms = 18.5453
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 18.615 ± 0.454
+Total ms  : 18.774 ± 0.452
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 52.6829, total_ms = 52.7578
+Run 2: kernel_ms = 52.2604, total_ms = 52.3209
+Run 3: kernel_ms = 52.0301, total_ms = 52.0889
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 52.324 ± 0.331
+Total ms  : 52.389 ± 0.340
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 94.8572, total_ms = 95.4607
+Run 2: kernel_ms = 94.8531, total_ms = 95.7408
+Run 3: kernel_ms = 94.8631, total_ms = 95.7624
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 94.858 ± 0.005
+Total ms  : 95.655 ± 0.168
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 46.5976, total_ms = 46.6701
+Run 2: kernel_ms = 45.6018, total_ms = 45.6767
+Run 3: kernel_ms = 45.6082, total_ms = 45.6849
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 45.936 ± 0.573
+Total ms  : 46.011 ± 0.571
+============================================================
+-----------------------------------------------------------
+Running: dist=reverse, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 320.633, total_ms = 320.714
+Run 2: kernel_ms = 319.961, total_ms = 320.025
+Run 3: kernel_ms = 320.117, total_ms = 320.193
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 320.237 ± 0.352
+Total ms  : 320.311 ± 0.360
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1022.98, total_ms = 1027.62
+Run 2: kernel_ms = 1023.3, total_ms = 1030.72
+Run 3: kernel_ms = 1023.3, total_ms = 1030.77
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1023.192 ± 0.184
+Total ms  : 1029.702 ± 1.806
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 327.835, total_ms = 327.953
+Run 2: kernel_ms = 327.165, total_ms = 327.29
+Run 3: kernel_ms = 327.279, total_ms = 327.397
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/reverse_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 327.426 ± 0.358
+Total ms  : 327.547 ± 0.356
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=10000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1.90022, total_ms = 1.9421
+Run 2: kernel_ms = 1.50461, total_ms = 1.54289
+Run 3: kernel_ms = 1.49965, total_ms = 1.54032
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1.635 ± 0.230
+Total ms  : 1.675 ± 0.231
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bitonic
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.228448, total_ms = 0.257194
+Run 2: kernel_ms = 0.211968, total_ms = 0.228794
+Run 3: kernel_ms = 0.217856, total_ms = 0.23435
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.219 ± 0.008
+Total ms  : 0.240 ± 0.015
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000
+  Algo    : bucket_radix
+  Blocks  : 40
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 2.4321, total_ms = 2.45547
+Run 2: kernel_ms = 1.7984, total_ms = 1.8132
+Run 3: kernel_ms = 1.78714, total_ms = 1.8015
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000
+Blocks    : 40
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 2.006 ± 0.369
+Total ms  : 2.023 ± 0.374
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=100000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 14.5364, total_ms = 14.5852
+Run 2: kernel_ms = 14.1688, total_ms = 14.217
+Run 3: kernel_ms = 14.1828, total_ms = 14.2295
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.296 ± 0.208
+Total ms  : 14.344 ± 0.209
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 0.491776, total_ms = 0.614012
+Run 2: kernel_ms = 0.4744, total_ms = 0.572434
+Run 3: kernel_ms = 0.473568, total_ms = 0.57438
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 0.480 ± 0.010
+Total ms  : 0.587 ± 0.023
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 15.4779, total_ms = 15.5676
+Run 2: kernel_ms = 14.7316, total_ms = 14.8285
+Run 3: kernel_ms = 14.7599, total_ms = 14.8561
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 14.990 ± 0.423
+Total ms  : 15.084 ± 0.419
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=1000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 18.2029, total_ms = 18.2605
+Run 2: kernel_ms = 17.8786, total_ms = 17.9315
+Run 3: kernel_ms = 17.8694, total_ms = 17.9216
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 17.984 ± 0.190
+Total ms  : 18.038 ± 0.193
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 5.04422, total_ms = 5.20886
+Run 2: kernel_ms = 5.03398, total_ms = 5.22621
+Run 3: kernel_ms = 5.0343, total_ms = 5.23237
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 5.038 ± 0.006
+Total ms  : 5.222 ± 0.012
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 1000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 19.1099, total_ms = 19.2632
+Run 2: kernel_ms = 18.275, total_ms = 18.4344
+Run 3: kernel_ms = 18.2776, total_ms = 18.4371
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n1000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 1000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 18.554 ± 0.481
+Total ms  : 18.712 ± 0.478
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=10000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 52.7882, total_ms = 52.8532
+Run 2: kernel_ms = 52.12, total_ms = 52.1798
+Run 3: kernel_ms = 50.7555, total_ms = 50.8164
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 51.888 ± 1.036
+Total ms  : 51.950 ± 1.038
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 93.2349, total_ms = 93.8471
+Run 2: kernel_ms = 93.2426, total_ms = 94.1448
+Run 3: kernel_ms = 93.2378, total_ms = 94.1285
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 93.238 ± 0.004
+Total ms  : 94.040 ± 0.167
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 10000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 46.1815, total_ms = 46.2525
+Run 2: kernel_ms = 45.3512, total_ms = 45.4247
+Run 3: kernel_ms = 45.2912, total_ms = 45.3641
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n10000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 10000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 45.608 ± 0.498
+Total ms  : 45.680 ± 0.496
+============================================================
+-----------------------------------------------------------
+Running: dist=sorted, N=100000000
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+-----------------------------------------------------------
+>> Algorithm: radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 321.938, total_ms = 322.018
+Run 2: kernel_ms = 321.303, total_ms = 321.362
+Run 3: kernel_ms = 321.72, total_ms = 321.792
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 321.654 ± 0.323
+Total ms  : 321.724 ± 0.333
+============================================================
+>> Algorithm: bitonic
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bitonic
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 1010.97, total_ms = 1015.49
+Run 2: kernel_ms = 1010.99, total_ms = 1018.38
+Run 3: kernel_ms = 1011, total_ms = 1018.38
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bitonic
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 1010.985 ± 0.017
+Total ms  : 1017.414 ± 1.671
+============================================================
+>> Algorithm: bucket_radix
+Using device 0: NVIDIA GeForce RTX 2080 Ti
+  SMs                : 68
+  Global memory (MB) : 11004.5
+  Compute capability : 7.5
+------------------------------------------------------------
+Dataset: /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+  N       : 100000000
+  Algo    : bucket_radix
+  Blocks  : 272
+  Threads : 256
+  Repeats : 3
+------------------------------------------------------------
+Run 1: kernel_ms = 328.314, total_ms = 328.439
+Run 2: kernel_ms = 327.058, total_ms = 327.186
+Run 3: kernel_ms = 327.668, total_ms = 327.794
+Sorted check: OK
+============================================================
+GPU SORT BENCH RESULT
+============================================================
+Algorithm : bucket_radix
+Dataset   : /mnt/vstor/courses/csds438/sxi219/Performance-Comparison-Non-Comparison-Sorting-Algorithms/datasets_unsigned/sorted_n100000000_min0_max4294967295_dtypeuint64_seed42.bin
+N         : 100000000
+Blocks    : 272
+Threads   : 256
+Repeats   : 3
+Verified  : yes
+Sorted OK : yes
+Kernel ms : 327.680 ± 0.628
+Total ms  : 327.806 ± 0.626
+============================================================
+=== Phase 3 GPU Sweep Complete ===
